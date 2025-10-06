@@ -1,0 +1,227 @@
+/* --------------------------------------------- 
+    Program     : style.css
+    author      : GRS
+    Date        : Initial: 2025-06-25 00:51:27 IST
+    Purpose     : WebDevtools - main entry css page
+                  All Aids and tools for creating fullstack or any applications
+                  Tools for Developers
+------------------------------------------------- */
+
+/* ------------------------------------------------------------ */
+/* Clear all the preformat of the browsers */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* All the variables of the project */
+:root {
+  /* Colors */
+  --color-base-white: white;
+  --color-base-lightgray: lightgray;
+  --color-base-blue: blue;
+  --apl-base-text-color-black: #1d1d1f;
+  --apl-base-text-color-white: #f5f5f7;
+  --apl-base-page-background-color: #f5f5f7;
+
+  /* Font Size */
+  --font-size-h2: 5.6rem; /*Apple*/
+  --font-size-subheading-h2: 2.8rem; /*Apple*/
+  --font-size-h3: 4rem; /*Apple*/
+  --font-size-subheading-h3: 2.1rem; /*Apple*/
+  --font-size-p: 1.4rem; /*Apple - gUserFix*/
+
+  /* Apple and microsoft has the menu very small not to attract 
+  attention to it than the products itself */
+  --font-size-nav-menu: 1.6rem; /*Apple - gUserFix*/
+  --font-size-nav-menu: 1.5rem; /*Apple - gUserFix*/
+  --font-size-nav-menu: 1.2rem; /*Apple - gUserFix*/
+
+  /* Footer font size */
+  --font-size-footer: 1.2rem;
+
+  /* Font  Weight */
+  --inter-font-weight: 400;
+  --font-weight-h1: 600;
+  --font-weight-h2: 600; /*Apple*/
+  --font-weight-subheading-h2: 400; /*Apple*/
+  --font-weight-h3: 600; /*Apple*/
+  --font-weight-subheading-h3: 400; /*Apple*/
+  --font-weight-p: 370; /*Apple - gUserFix*/
+  --font-weight-nav-menu: 370; /*Apple - gUserFix*/
+  /* --font-weight-nav-menu: 355;          Apple - gUserFix */
+
+  /* Font Letter Spacing */
+  --letter-spacing-h2: -0.28px; /*Apple*/
+  --letter-spacing-subheading-h2: -0.196px; /*Apple*/
+  --letter-spacing-subheading-h3: -0.22px; /*Apple*/
+  --letter-spacing-nav-menu: -0.196px; /*gMade*/
+
+  /* Font Height */
+  --line-height-h2: 6rem; /*Apple*/
+  --line-height-subheading-h2: 3.2rem; /*Apple*/
+  --line-height-h3: 4.4rem; /*Apple*/
+
+  /*Font Familly */
+  --body-font-family-sans-serif: "Inter", "Open Sans", "Roboto", sans-serif;
+
+  /* Other Sizes */
+  --gap-nav-menu: 3rem;
+  --text-deco-thickness-menu: 0.3rem;
+
+  /* Margins */
+  --margin-nav-menu: 0 8rem;
+
+  /* Paddings */
+  --padding-tb-nav-menu: 1rem 0px;
+  --padding-footer-section: 2rem;
+
+  /* Heights */
+  --logo-image-menu-height: 2rem;
+  --height-footer-section: 10rem;
+
+  /* Positions */
+  --position-menu-top: 0px;
+  --position-menu-left: 0px;
+  --position-menu-right: 0px;
+
+
+  /* Temp values */
+  --temp-height-body: 100rem;
+  --temp-height-footer: 20rem;
+
+}
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/* Goolge Fonts - "Inter" Font */
+.inter-google-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--inter-font-weight);
+  font-style: normal;
+}
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/* ---- Global Settings ---- */
+/* Set the page having flexible and spaces on sides for all width sizes */
+.container {
+  max-width: 1200px;
+  width: 90%;
+}
+
+/* ---- HTML set Global font size REM as 10px / 62.5% of 16px(default)  ---- */
+html {
+  font-size: 62.5%;
+
+  /* Temporary centering of texts */
+  text-align: center;
+}
+
+/* ------------------------------------------------------------ */
+/* ---- Core Elements Styles ---- */
+body {
+  color: var(--apl-base-text-color-black);
+  background-color: var(--apl-base-page-background-color);
+  font-family: var(--body-font-family-sans-serif);
+}
+
+/* ------------------------------------------------------------ */
+/* ---- Text Properies ---- */
+h1 {
+  font-size: 4rem;
+  font-weight: var(--font-weight-h1);
+  letter-spacing: var(--letter-spacing-h2);
+}
+
+/* Main header in sections */
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  line-height: var(--line-height-h2);
+  letter-spacing: var(--letter-spacing-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-h3);
+  letter-spacing: var(--letter-spacing-h2);
+}
+p {
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-p);
+  /* letter-spacing: var(--letter-spacing-h2); */
+}
+
+a {
+  text-decoration: none;
+}
+/* ------------------------------------------------------------ */
+.subheading-h2 {
+  font-size: var(--font-size-subheading-h2);
+  font-weight: var(--font-weight-subheading-h2);
+  letter-spacing: var(--letter-spacing-subheading-h2);
+}
+.subheading-h3 {
+  font-size: var(--font-size-subheading-h3);
+  font-weight: var(--font-weight-subheading-h3);
+  letter-spacing: var(--letter-spacing-subheading-h3);
+}
+
+
+/* ------------------------------------------------- */
+/* ---------- Navigation Apple Microsoft  Mix------- */
+/* ------------------------------------------------- */
+
+/* Include nav menu font  */
+.nav-menu-font {
+  font-size: var(--font-size-nav-menu);
+  font-weight: var(--font-weight-nav-menu);
+  letter-spacing: var(--letter-spacing-nav-menu);
+
+  /* letter-spacing: var(--letter-spacing-h2); */
+}
+
+/* Just the nav bar full width */
+.nav-menu-bar {
+  /* Temp disable and enable again after blur check */
+  /* background-color: var(--color-base-white); */
+
+  /* Border doesnt look classy. Lago,Mintlify and Medium uses them */
+  /* border: solid 0.5px var(--color-base-lightgray); */
+
+  /* Make the menu fixed on top */
+  position: sticky;
+  top: var(--position-menu-top);
+  right: var(--position-menu-right);
+  left: var(--position-menu-left);
+  z-index: 999;
+
+  /* Make the below background blur and translucent */
+  background: rgba(255,255,255, 0.8);
+  /* background: rgba(255,255,255, 0.5); */
+  backdrop-filter: saturate(1.8) blur(20px);
+}
+
+/* Inside NavBar List Flex container */
+.nav-menu-lists {
+  display: flex;
+  /* Place the items on the right and left edges */
+  justify-content: space-between;
+}
+
+/* If logo included control the height */
+.logo-menu {
+  height: var(--logo-image-menu-height);
+}
+
+/* Nav bar flex left and right items */
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  gap: var(--gap-nav-menu);
+  /* margin: var(--margin-nav-menu); */
+  padding: var(--padding-tb-nav-menu);
+}
