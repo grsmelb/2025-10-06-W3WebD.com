@@ -1,0 +1,794 @@
+<!-- ------------------------------------------- -->
+<!--
+    Program         : box-shadow.html
+    author          : GRS
+    Date            : Initial: 2025-07-08 13:49:37 IST
+    Purpose         : Sparrow CSS Framework
+                      Templates of Menus
+
+    Details         : create at least 10 menu templates so i could use in 
+                      my website and use in the framework components
+                      
+   
+    To Do           : - Make 10s-100s of menu templates
+                      - Simple-link-Menu, Apple-menu, google-menu , medium-menu,
+                        flat-colorful-menu,  
+                      - make it responsive for sm,md,xl,xxl etc like tailwind
+
+    Wish            : - Can in include stylsheet inside a stylesheet like C cpp?
+                      - Make it object oriented or one word magic building of menus
+                      - Make GUI editor to get the code rather than rember so many 
+                        user defined framework keywords like tailwinds
+                   
+    Question        :    
+
+    Understanding   : 
+    Log
+    ------------------------------------------------- 
+    2025-07-06      GRS     Initial Code
+    -------------------------------------------------------              
+    -->
+<!-- ------------------------------------------- -->
+
+<!-- Add all Meta link tabs required for all projects -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparrow Templates</title>
+
+    <!-- font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Include Stylesheet in modules than dumping in one file -->
+    <!-- include cleanup in every html if possible -->
+    <!-- <link rel="stylesheet" href="../0Cleanup/0cleanup.css">
+    <link rel="stylesheet" href="../0Global/1global.css">
+    <link rel="stylesheet" href="../0Core/1colors.css">
+    <link rel="stylesheet" href="../xComponents/1menus.css">
+    <link rel="stylesheet" href="../0Core/1sizing.css">
+    <link rel="stylesheet" href="../1Layout/1Grid/1grid.css">
+    <link rel="stylesheet" href="../1Layout/1Grid/1flex.css">
+    <link rel="stylesheet" href="../0Elements/1lists.css">
+    <link rel="stylesheet" href="../0Core/1typography.css">
+    <link rel="stylesheet" href="../1Borders/1border.css">
+    <link rel="stylesheet" href="./1box-shadow.css">
+    <link rel="stylesheet" href="../0Core/1position.css"> -->
+
+    <link rel="stylesheet" href="../zMain/main.sparrow.css">
+    <link rel="stylesheet" href="../1style-sparrow-framework-main.css">
+</head>
+
+<body>
+
+    <!-- Navigation Section - Nav bar -->
+    <!-- <nav class="container nav-menu-font "> -->
+    <nav class="p-4 bg-white pos-sticky pos-top-0 pos-left-0 pos-right-0 "> <!-- Top nav bar-->
+        <div class="flex m-l-30 m-r-30 flex-dir-row js-cont-between tx-font-14 "> <!-- Whole Menu -->
+            <div> <!-- Left menu-->
+                <ul class="flex gp-col-10 list-remove-bullets p-4 js-cont-center">
+                    <li><a href="../1index-sparrow-framework-main.html"><img class="logo-menu w-20 p5"
+                                src="../zImages/favicon-sparrow-icon-small.jpeg" alt="Site Logo Sparrow"> </a></li>
+                    <li><a class="color-gray-8 " href="../1index-sparrow-framework-main.html">Home</a></li>
+                    <li><a class="color-gray-8 " href="#">Products</a></li>
+                    <li><a class="color-gray-8 " href="#">Products</a></li>
+                    <li><a class="color-gray-8 " href="#">Support</a></li>
+                    <li><a class="color-gray-8 " href="#">Services</a></li>
+                    <li><a class="color-gray-8 " href="#">About</a></li>
+                    <li><a class="color-gray-8 " href="#">Help</a></li>
+                </ul>
+            </div> <!-- Left menu-->
+            <div> <!-- Right menu-->
+                <!-- <ul class="flex flex-dir-row gp-col-5 list-remove-bullets p-4 js-cont-center"> -->
+                <ul class="flex flex-dir-row gp-col-10 list-remove-bullets p-4 js-cont-center">
+                    <li>
+                        <div class="menu-x-1">
+                            <div>
+                                <a class="color-gray-8 p-l-5  p-t-10 p-b-10 menu-button-x-1"
+                                    href="../2sparrow-fw-documentation-main.html">
+                                    Documents
+                                    <i class="fa-solid fa-chevron-down menu-icon-down-x-1 "></i>
+                                </a>
+                            </div>
+
+                            <div
+                                class=" flex js-cont-center shadow-y-1 tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-250 z-99 bg-white display-none menu-list-x-1">
+                                <ul class="flex flex-dir-col js-cont-center al-item-center">
+                                    <a class="color-gray-8 w-200 p-5 p-t-10 p-l-30 m-t-8"
+                                        href="../2sparrow-fw-documentation-main.html">
+                                        <i class="fa-solid fa-book p-r-10"></i>
+                                        Sparrow Doc-Main
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30"
+                                        href="../2sparrow-fw-documentation-draft.html">
+                                        <i class="fa-solid fa-bars p-r-10"></i>
+                                        Sparrow Doc-Draft
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30"
+                                        href="../2sparrow-fw-documentation-MDN.html">
+                                        <i class="fa-solid fa-border-top-left p-r-10"></i>
+                                        Sparrow Doc-MDN
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-b-10 p-l-30 m-b-8"
+                                        href="../../1w3webd/1tools/1tools.html">
+                                        <i class="fa-solid fa-money-bills p-r-6"></i>
+                                        Web Tools
+                                    </a>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-x-2">
+                            <div>
+                                <a class="color-gray-8  p-r-20 p-t-10 p-b-10 menu-button-x-2" href="#">
+                                    Components
+                                    <i class="fa-solid fa-chevron-down menu-icon-down-x-1"></i>
+                                    <!-- <i class="fa-solid fa-caret-down menu-icon-down-1"></i> -->
+
+                                </a>
+
+                            </div>
+                            <!--                                
+                                <button>
+                                    En
+                                </button> 
+                                
+                                -->
+                            <!-- class=" flex js-cont-center m-30 w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute hidden" -->
+                            <!-- class=" flex js-cont-center m-2 w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute display-none" -->
+                            <!-- class=" flex js-cont-center m-2 w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute pos-right-30 m-t-10 z-1 shadow-gl-y-5 display-none menu-list-1 " -->
+                            <!-- class=" flex js-cont-center w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute pos-right-30 z-99 bg-white shadow-gl-y-5 display-none menu-list-1 "> -->
+                            <!-- class=" flex js-cont-center w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute pos-right-60 z-99 bg-white display-none menu-list-1 "> -->
+                            <!-- class=" flex js-cont-center b-solid b-width-1 b-lightgray-1 tx-font-13 pos-absolute pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                            <!-- class=" flex js-cont-center  shadow-gl-y-5 tx-font-13 pos-absolute pos-top-40 b-lightgray-1 m-t-5-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                            <!-- class=" flex js-cont-center  shadow-gl-y-5 tx-font-13 b-lightgray-1 pos-absolute pos-top-27 m-t-5-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                            <!-- class=" flex js-cont-center  shadow-gl-y-xham  tx-font-13  pos-absolute pos-top-35 m-t-3-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                            <!-- class=" flex js-cont-center shadow-gl-y-g tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                            <!-- class=" flex js-cont-center shadow-y-1 tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+
+                            <div
+                                class=" flex js-cont-center shadow-y-1 tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-125 z-99 bg-white display-none menu-list-x-2">
+                                <ul class="flex flex-dir-col js-cont-center al-item-center">
+                                    <a class="color-gray-8 w-200 p-5 p-t-10 p-l-30 m-t-8" href="../0Core/1colors.html">
+                                        <i class="fa-solid fa-palette p-r-10"></i>
+                                        Colors
+
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30" href="../xComponents/1menus.html">
+                                        <i class="fa-solid fa-bars p-r-10"></i>
+                                        Menus
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30" href="../1Borders/1border.html">
+                                        <i class="fa-solid fa-border-top-left p-r-10"></i>
+                                        Border
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30 "
+                                        href="../1Effects/1box-shadow.html">
+                                        <i class="fa-solid fa-money-bills p-r-6"></i>
+                                        Box Shadow
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30 " href="../1Effects/1search-boxes.html">
+                                        <i class="fa-solid fa-search p-r-6"></i>
+                                        Search Boxes
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-b-10 p-l-30 m-b-8"
+                                            href="../x-web-components/0core/0web-component-examples.html">
+                                            <i class="fa-solid fa-screwdriver-wrench p-r-6"></i>
+                                            Web Components
+                                        </a>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li><a class="color-gray-8 " href="#">Login</a></li>
+                    <li><a class="color-gray-8 " href="#">Signup</a></li>
+                    <li><a class="color-gray-8" href="#">En</a></li>
+                </ul>
+            </div> <!-- Right menu-->
+        </div> <!-- Whole Menu -->
+    </nav> <!-- Top nav bar-->
+
+
+    <!-- -------------------------------------- -->
+    <!-- Simple Link No-dropdown Menu -->
+    <!-- -------------------------------------- -->
+    <hr class="m-30">
+
+    <div class="flex gp-col-100 gp-row-10 m-50">
+
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-1 ">
+            <p> <b>Shadow-gl-y-1: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-2 ">
+            <p> <b>Shadow-gl-y-2: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-3 ">
+            <p> <b>Shadow-gl-y-3: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-4 ">
+            <p> <b>Shadow-gl-y-4: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+    </div>
+
+
+    <div class="flex gp-col-100 gp-row-10 m-50">
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-5 ">
+            <p> <b>Shadow-gl-y-5: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-6 ">
+            <p> <b>Shadow-gl-y-6: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-7 ">
+            <p> <b>Shadow-gl-y-7: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-g ">
+            <p> <b>Shadow-gl-y-g: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+    </div>
+
+
+    <!-- -------------------------------------- -->
+    <!-- Simple Link No-dropdown Menu -->
+    <!-- -------------------------------------- -->
+    <hr class="m-30">
+
+    <div class="flex gp-col-100 gp-row-10 m-50">
+
+
+        <div class="bg-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-1 ">
+            <p> <b>Shadow-gl-y-1: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="bg-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-2 ">
+            <p> <b>Shadow-gl-y-2: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="bg-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-3 ">
+            <p> <b>Shadow-gl-y-3: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="bg-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-4 ">
+            <p> <b>Shadow-gl-y-4: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+    </div>
+
+
+    <div class="flex gp-col-100 gp-row-10 m-50">
+        <div class="bg-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-5 ">
+            <p> <b>Shadow-gl-y-5: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="bg-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-6 ">
+            <p> <b>Shadow-gl-y-6: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="bg-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-7 ">
+            <p> <b>Shadow-gl-y-7: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="bg-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-8 ">
+            <p> <b>Shadow-gl-y-8: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+    </div>
+
+
+    <!-- -------------------------------------- -->
+    <!-- Simple Link No-dropdown Menu -->
+    <!-- -------------------------------------- -->
+    <hr class="m-30">
+
+    <div class="flex gp-col-100 gp-row-10 m-50">
+
+
+        <div class="color-white bg-cyan-5 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-1 ">
+            <p> <b>Shadow-gl-y-1: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="color-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-2 ">
+            <p> <b>Shadow-gl-y-2: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="color-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-3 ">
+            <p> <b>Shadow-gl-y-3: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="color-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-4 ">
+            <p> <b>Shadow-gl-y-4: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+    </div>
+
+
+    <div class="flex gp-col-100 gp-row-10 m-50">
+        <div class="color-white bg-blue-5 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-5 ">
+            <p> <b>Shadow-gl-y-5: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="color-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-6 ">
+            <p> <b>Shadow-gl-y-6: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="color-white bg-indigo-5 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-7 ">
+            <p> <b>Shadow-gl-y-7: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="color-rose-2 w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-gl-y-8 ">
+            <p> <b>Shadow-gl-y-8: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+    </div>
+    <!-- -------------------------------------- -->
+    <!-- Simple Link No-dropdown Menu -->
+    <!-- -------------------------------------- -->
+    <hr class="m-30">
+
+    <div class="flex gp-col-10 gp-row-10 m-50">
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-y-1 ">
+            <p> <b>Shadow-Y-1: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-y-2 ">
+            <p> <b>Shadow-Y-2: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-y-3 ">
+            <p> <b>Shadow-Y-3: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-y-4 ">
+            <p> <b>Shadow-Y-4: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-y-5 ">
+            <p> <b>Shadow-Y-5: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+
+    </div>
+
+    <div class="flex gp-col-10 gp-row-10 m-50">
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-y-6 ">
+            <p> <b>Shadow-Y-6: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-y-7 ">
+            <p> <b>Shadow-Y-7: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-y-8 ">
+            <p> <b>Shadow-Y-8: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-y-9 ">
+            <p> <b>Shadow-Y-9: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-y-10 ">
+            <p> <b>Shadow-Y-10: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+    </div>
+
+
+    <hr class="m-30">
+
+
+    <div class="flex gp-col-10 gp-row-10 m-50">
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-x-1 ">
+            <p> <b>shadow-x-1: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-x-2 ">
+            <p> <b>shadow-x-2: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-x-3 ">
+            <p> <b>shadow-x-3: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-x-4 ">
+            <p> <b>shadow-x-4: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-x-5 ">
+            <p> <b>shadow-x-5: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+
+    </div>
+
+    <div class="flex gp-col-10 gp-row-10 m-50">
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-x-6 ">
+            <p> <b>shadow-x-6: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-x-7 ">
+            <p> <b>shadow-x-7: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-x-8 ">
+            <p> <b>shadow-x-8: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-x-9 ">
+            <p> <b>shadow-x-9: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-x-10 ">
+            <p> <b>shadow-x-10: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+    </div>
+
+
+    <!-- -------------------------------------- -->
+    <!-- Simple Link No-dropdown Menu -->
+    <!-- -------------------------------------- -->
+    <hr class="m-30">
+
+    <div class="flex gp-col-10 gp-row-10 m-50">
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yr-1 ">
+            <p> <b>Shadow-yr-1: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yr-2 ">
+            <p> <b>Shadow-yr-2: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yr-3 ">
+            <p> <b>Shadow-yr-3: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yr-4 ">
+            <p> <b>Shadow-yr-4: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yr-5 ">
+            <p> <b>Shadow-yr-5: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+
+    </div>
+
+    <div class="flex gp-col-10 gp-row-10 m-50">
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yr-6 ">
+            <p> <b>Shadow-yr-6: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yr-7 ">
+            <p> <b>Shadow-yr-7: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yr-8 ">
+            <p> <b>Shadow-yr-8: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yr-9 ">
+            <p> <b>Shadow-yr-9: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yr-10 ">
+            <p> <b>Shadow-yr-10: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+    </div>
+
+
+    <hr class="m-30">
+
+
+    <div class="flex gp-col-10 gp-row-10 m-50">
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xr-1 ">
+            <p> <b>shadow-xr-1: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xr-2 ">
+            <p> <b>shadow-xr-2: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xr-3 ">
+            <p> <b>shadow-xr-3: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xr-4 ">
+            <p> <b>shadow-xr-4: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xr-5 ">
+            <p> <b>shadow-xr-5: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+
+    </div>
+
+    <div class="flex gp-col-10 gp-row-10 m-50">
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xr-6 ">
+            <p> <b>shadow-xr-6: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xr-7 ">
+            <p> <b>shadow-xr-7: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xr-8 ">
+            <p> <b>shadow-xr-8: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xr-9 ">
+            <p> <b>shadow-xr-9: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xr-10 ">
+            <p> <b>shadow-xr-10: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+    </div>
+
+
+
+    <hr class="m-30">
+
+
+    <div class="flex gp-col-30 gp-row-10 m-50">
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xy-1 ">
+            <p> <b>shadow-xy-1: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xy-2 ">
+            <p> <b>shadow-xy-2: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xy-3 ">
+            <p> <b>shadow-xy-3: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xy-4 ">
+            <p> <b>shadow-xy-4: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xy-5 ">
+            <p> <b>shadow-xy-5: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+
+    </div>
+
+    <div class="flex gp-col-30 gp-row-10 m-50">
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xy-6 ">
+            <p> <b>shadow-xy-6: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xy-7 ">
+            <p> <b>shadow-xy-7: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xy-8 ">
+            <p> <b>shadow-xy-8: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xy-9 ">
+            <p> <b>shadow-xy-9: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-xy-10 ">
+            <p> <b>shadow-xy-10: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+    </div>
+
+
+
+    <hr class="m-30">
+
+
+    <div class="flex gp-col-30 gp-row-10 m-50">
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yx-1 ">
+            <p> <b>shadow-yx-1: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yx-2 ">
+            <p> <b>shadow-yx-2: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yx-3 ">
+            <p> <b>shadow-yx-3: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yx-4 ">
+            <p> <b>shadow-yx-4: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yx-5 ">
+            <p> <b>shadow-yx-5: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+
+
+    </div>
+
+    <div class="flex gp-col-30 gp-row-10 m-50">
+
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yx-6 ">
+            <p> <b>shadow-yx-6: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yx-7 ">
+            <p> <b>shadow-yx-7: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yx-8 ">
+            <p> <b>shadow-yx-8: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yx-9 ">
+            <p> <b>shadow-yx-9: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+        <div class="w-200 p-20 o-hidden tx-font-14 b-round-10 shadow-yx-10 ">
+            <p> <b>shadow-yx-10: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem. Incidunt
+                vitae
+                aspernatur mollitia alias corporis. Enim provident </p>
+        </div>
+    </div>
+
+    <!-- -------------------------------------- -->
+    <!-- Simple Link No-dropdown Menu -->
+    <!-- -------------------------------------- -->
+
+    <!-- Navigation Section - Nav bar -->
+    <!-- <nav class="container nav-menu-font "> -->
+    <footer class="m-b-12 m-l-20 m-r-20 b-t-gray-3"> <!-- Top nav bar-->
+        <!-- <div class="flex flex-dir-row js-cont-between m-12 bg-lyon-lightblack "> -->
+        <!-- <div class="flex flex-dir-row js-cont-between m-12 "> -->
+        <div class="flex flex-dir-row js-cont-between "> <!-- Whole Menu -->
+
+
+            <div> <!-- Left menu-->
+                <ul class="menu-list flex gp-col-10 list-remove-bullets p-15 tx-font-13 ">
+                    <li><a class="color-gray-5 " href="#">Contact</a></li>
+                    <li><a class="color-gray-5 " href="#">Team</a></li>
+                    <li><a class="color-gray-5 " href="#">Recruitment</a></li>
+                    <li><a class="color-gray-5 " href="#">Legal</a></li>
+                    <li><a class="color-gray-5 " href="#">Advertising</a></li>
+                    <li><a class="color-gray-5 " href="#">Help</a></li>
+                </ul>
+            </div> <!-- Left menu-->
+            <div> <!-- Right menu-->
+                <ul class="menu-list flex flex-dir-row gp-col-10 list-remove-bullets p-15 tx-font-13">
+                    <li><a class="color-gray-5 " href="#">Services</a></li>
+                    <li><a class="color-gray-5 " href="#">Links</a></li>
+                    <li><a class="color-gray-5 " href="#">Mode</a></li>
+                </ul>
+            </div> <!-- Right menu-->
+        </div> <!-- Whole Menu -->
+    </footer> <!-- Top nav bar-->
+
+
+</html>

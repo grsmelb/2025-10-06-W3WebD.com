@@ -1,0 +1,565 @@
+<!-- ------------------------------------------- -->
+<!--
+    Program     : 1index-mytemplate.html
+    author      : GRS
+    Date        : Initial: 2025-06-23 00:51:27 IST
+    Explanation : Apple like Website template creation
+                  Will start the content in another repository  
+    Purpose     : WebDevtools - main entry html page
+                  All Aids and tools for creating fullstack or any applications
+                  Tools for Developers
+    Log:
+    -------------------------------------------------------
+    2025-06-23 00:51:27IST      GRS         Initial - Just font creation - 4hours
+    2025-06-23 06:20:00IST      GRS         Menu Bar creation - modified highlights
+    2025-06-23 12:37:29IST      GRS         Menu bar - Translucent - Centered- Copyright 
+
+    -------------------------------------------------------              
+    -->
+<!-- ------------------------------------------- -->
+
+<!-- Add all Meta link tabs required for all projects -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparrow Templates</title>
+
+    <!-- font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Include Stylesheet in modules than dumping in one file -->
+    <!-- include cleanup in every html if possible -->
+    <!-- <link rel="stylesheet" href="../0Cleanup/0cleanup.css">
+    <link rel="stylesheet" href="../0Global/1global.css">
+    <link rel="stylesheet" href="./1colors.css">
+    <link rel="stylesheet" href="../xComponents/1menus.css">
+    <link rel="stylesheet" href="../0Core/1sizing.css">
+    <link rel="stylesheet" href="../1Layout/1Grid/1grid.css">
+    <link rel="stylesheet" href="../1Layout/1Grid/1flex.css">
+    <link rel="stylesheet" href="../0Elements/1lists.css">
+    <link rel="stylesheet" href="../0Core/1typography.css">
+    <link rel="stylesheet" href="../1Borders/1border.css">
+    <link rel="stylesheet" href="../1Effects/1box-shadow.css">
+    <link rel="stylesheet" href="../0Core/1position.css">
+
+     -->
+    <link rel="stylesheet" href="../zMain/main.sparrow.css">
+    <link rel="stylesheet" href="../1style-sparrow-framework-main.css">
+</head>
+
+<body>
+
+    <!-- -------------------------------------- -->
+    <!-- Simple Link No-dropdown Menu -->
+    <!-- -------------------------------------- -->
+
+    <!-- Navigation Section - Nav bar -->
+    <!-- <nav class="container nav-menu-font "> -->
+
+    <!-- Navigation Section - Nav bar -->
+    <!-- <nav class="container nav-menu-font "> -->
+    <nav class="p-4 bg-white pos-sticky pos-top-0 pos-left-0 pos-right-0 "> <!-- Top nav bar-->
+        <div class="flex m-l-30 m-r-30 flex-dir-row js-cont-between tx-font-14 "> <!-- Whole Menu -->
+            <div> <!-- Left menu-->
+                <ul class="flex gp-col-10 list-remove-bullets p-4 js-cont-center">
+                    <li><a href="../1index-sparrow-framework-main.html"><img class="logo-menu w-20 p5"
+                                src="../zImages/favicon-sparrow-icon-small.jpeg" alt="Site Logo Sparrow"> </a></li>
+                    <li><a class="color-gray-8 " href="../1index-sparrow-framework-main.html">Home</a></li>
+                    <li><a class="color-gray-8 " href="#">Products</a></li>
+                    <li><a class="color-gray-8 " href="#">Products</a></li>
+                    <li><a class="color-gray-8 " href="#">Support</a></li>
+                    <li><a class="color-gray-8 " href="#">Services</a></li>
+                    <li><a class="color-gray-8 " href="#">About</a></li>
+                    <li><a class="color-gray-8 " href="#">Help</a></li>
+                </ul>
+            </div> <!-- Left menu-->
+            <div> <!-- Right menu-->
+                <!-- <ul class="flex flex-dir-row gp-col-5 list-remove-bullets p-4 js-cont-center"> -->
+                <ul class="flex flex-dir-row gp-col-10 list-remove-bullets p-4 js-cont-center">
+                    <li>
+                        <div class="menu-x-1">
+                            <div>
+                                <a class="color-gray-8 p-l-5  p-t-10 p-b-10 menu-button-x-1"
+                                    href="../2sparrow-fw-documentation-main.html">
+                                    Documents
+                                    <i class="fa-solid fa-chevron-down menu-icon-down-x-1 "></i>
+                                </a>
+                            </div>
+
+                            <div
+                                class=" flex js-cont-center shadow-y-1 tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-250 z-99 bg-white display-none menu-list-x-1">
+                                <ul class="flex flex-dir-col js-cont-center al-item-center">
+                                    <a class="color-gray-8 w-200 p-5 p-t-10 p-l-30 m-t-8"
+                                        href="../2sparrow-fw-documentation-main.html">
+                                        <i class="fa-solid fa-book p-r-10"></i>
+                                        Sparrow Doc-Main
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30"
+                                        href="../2sparrow-fw-documentation-draft.html">
+                                        <i class="fa-solid fa-bars p-r-10"></i>
+                                        Sparrow Doc-Draft
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30"
+                                        href="../2sparrow-fw-documentation-MDN.html">
+                                        <i class="fa-solid fa-border-top-left p-r-10"></i>
+                                        Sparrow Doc-MDN
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-b-10 p-l-30 m-b-8"
+                                        href="../../1w3webd/1tools/1tools.html">
+                                        <i class="fa-solid fa-money-bills p-r-6"></i>
+                                        Web Tools
+                                    </a>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-x-2">
+                            <div>
+                                <a class="color-gray-8  p-r-20 p-t-10 p-b-10 menu-button-x-2" href="#">
+                                    Components
+                                    <i class="fa-solid fa-chevron-down menu-icon-down-x-1"></i>
+                                    <!-- <i class="fa-solid fa-caret-down menu-icon-down-1"></i> -->
+
+                                </a>
+
+                            </div>
+                            <!--                                
+                                <button>
+                                    En
+                                </button> 
+                                
+                                -->
+                            <!-- class=" flex js-cont-center m-30 w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute hidden" -->
+                            <!-- class=" flex js-cont-center m-2 w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute display-none" -->
+                            <!-- class=" flex js-cont-center m-2 w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute pos-right-30 m-t-10 z-1 shadow-gl-y-5 display-none menu-list-1 " -->
+                            <!-- class=" flex js-cont-center w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute pos-right-30 z-99 bg-white shadow-gl-y-5 display-none menu-list-1 "> -->
+                            <!-- class=" flex js-cont-center w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute pos-right-60 z-99 bg-white display-none menu-list-1 "> -->
+                            <!-- class=" flex js-cont-center b-solid b-width-1 b-lightgray-1 tx-font-13 pos-absolute pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                            <!-- class=" flex js-cont-center  shadow-gl-y-5 tx-font-13 pos-absolute pos-top-40 b-lightgray-1 m-t-5-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                            <!-- class=" flex js-cont-center  shadow-gl-y-5 tx-font-13 b-lightgray-1 pos-absolute pos-top-27 m-t-5-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                            <!-- class=" flex js-cont-center  shadow-gl-y-xham  tx-font-13  pos-absolute pos-top-35 m-t-3-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                            <!-- class=" flex js-cont-center shadow-gl-y-g tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                            <!-- class=" flex js-cont-center shadow-y-1 tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+
+                            <div
+                                class=" flex js-cont-center shadow-y-1 tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-125 z-99 bg-white display-none menu-list-x-2">
+                                <ul class="flex flex-dir-col js-cont-center al-item-center">
+                                    <a class="color-gray-8 w-200 p-5 p-t-10 p-l-30 m-t-8" href="../0Core/1colors.html">
+                                        <i class="fa-solid fa-palette p-r-10"></i>
+                                        Colors
+
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30" href="../xComponents/1menus.html">
+                                        <i class="fa-solid fa-bars p-r-10"></i>
+                                        Menus
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30" href="../1Borders/1border.html">
+                                        <i class="fa-solid fa-border-top-left p-r-10"></i>
+                                        Border
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30"
+                                        href="../1Effects/1box-shadow.html">
+                                        <i class="fa-solid fa-money-bills p-r-6"></i>
+                                        Box Shadow
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-l-30 " href="../1Effects/1search-boxes.html">
+                                        <i class="fa-solid fa-search p-r-6"></i>
+                                        Search Boxes
+                                    </a>
+                                    <a class="color-gray-8 w-200  p-5 p-b-10 p-l-30 m-b-8"
+                                            href="../x-web-components/0core/0web-component-examples.html">
+                                            <i class="fa-solid fa-screwdriver-wrench p-r-6"></i>
+                                            Web Components
+                                        </a>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li><a class="color-gray-8 " href="#">Login</a></li>
+                    <li><a class="color-gray-8 " href="#">Signup</a></li>
+                    <li><a class="color-gray-8" href="#">En</a></li>
+                </ul>
+            </div> <!-- Right menu-->
+        </div> <!-- Whole Menu -->
+    </nav> <!-- Top nav bar-->
+
+
+    <div class="flex js-cont-center al-item-center">
+        <div class="b-solid b-1">
+            <div class="flex flex-dir-col js-cont-center al-item-center gp-row-5 m-10">
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Red</div>
+                    <div class="bg-red-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-red-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-red-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-red-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-red-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-red-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-red-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-red-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-red-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-red-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-red-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Orange</div>
+                    <div class="bg-orange-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-orange-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-orange-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-orange-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-orange-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-orange-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-orange-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-orange-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-orange-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-orange-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-orange-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Amber</div>
+                    <div class="bg-amber-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-amber-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-amber-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-amber-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-amber-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-amber-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-amber-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-amber-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-amber-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-amber-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-amber-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Yellow</div>
+                    <div class="bg-yellow-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-yellow-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-yellow-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-yellow-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-yellow-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-yellow-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-yellow-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-yellow-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-yellow-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-yellow-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-yellow-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Lime</div>
+                    <div class="bg-lime-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-lime-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-lime-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-lime-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-lime-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-lime-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-lime-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-lime-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-lime-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-lime-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-lime-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">green</div>
+                    <div class="bg-green-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-green-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-green-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-green-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-green-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-green-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-green-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-green-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-green-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-green-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-green-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Emerald</div>
+                    <div class="bg-emerald-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-emerald-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-emerald-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-emerald-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-emerald-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-emerald-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-emerald-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-emerald-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-emerald-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-emerald-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-emerald-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Teal</div>
+                    <div class="bg-teal-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-teal-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-teal-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-teal-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-teal-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-teal-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-teal-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-teal-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-teal-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-teal-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-teal-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Cyan</div>
+                    <div class="bg-cyan-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-cyan-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-cyan-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-cyan-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-cyan-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-cyan-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-cyan-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-cyan-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-cyan-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-cyan-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-cyan-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Sky</div>
+                    <div class="bg-sky-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-sky-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-sky-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-sky-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-sky-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-sky-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-sky-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-sky-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-sky-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-sky-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-sky-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Blue</div>
+                    <div class="bg-blue-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-blue-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-blue-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-blue-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-blue-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-blue-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-blue-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-blue-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-blue-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-blue-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-blue-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Indigo</div>
+                    <div class="bg-indigo-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-indigo-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-indigo-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-indigo-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-indigo-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-indigo-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-indigo-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-indigo-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-indigo-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-indigo-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-indigo-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Violet</div>
+                    <div class="bg-violet-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-violet-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-violet-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-violet-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-violet-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-violet-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-violet-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-violet-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-violet-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-violet-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-violet-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Purple</div>
+                    <div class="bg-purple-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-purple-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-purple-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-purple-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-purple-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-purple-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-purple-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-purple-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-purple-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-purple-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-purple-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Fuchsia</div>
+                    <div class="bg-fuchsia-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-fuchsia-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-fuchsia-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-fuchsia-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-fuchsia-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-fuchsia-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-fuchsia-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-fuchsia-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-fuchsia-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-fuchsia-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-fuchsia-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Pink</div>
+                    <div class="bg-pink-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-pink-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-pink-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-pink-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-pink-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-pink-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-pink-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-pink-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-pink-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-pink-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-pink-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Rose</div>
+                    <div class="bg-rose-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-rose-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-rose-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-rose-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-rose-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-rose-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-rose-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-rose-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-rose-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-rose-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-rose-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Slate</div>
+                    <div class="bg-slate-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-slate-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-slate-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-slate-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-slate-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-slate-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-slate-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-slate-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-slate-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-slate-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-slate-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Gray</div>
+                    <div class="bg-gray-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-gray-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-gray-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-gray-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-gray-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-gray-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-gray-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-gray-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-gray-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-gray-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-gray-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Zinc</div>
+                    <div class="bg-zinc-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-zinc-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-zinc-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-zinc-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-zinc-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-zinc-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-zinc-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-zinc-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-zinc-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-zinc-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-zinc-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Neutral</div>
+                    <div class="bg-neutral-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-neutral-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-neutral-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-neutral-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-neutral-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-neutral-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-neutral-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-neutral-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-neutral-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-neutral-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-neutral-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+                <div class="flex  gp-col-5">
+                    <div class="w-60 m-2 p-1 tx-font-13">Stone</div>
+                    <div class="bg-stone-10 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-stone-9 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-stone-8 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-stone-7 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-stone-6 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-stone-5 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-stone-4 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-stone-3 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-stone-2 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-stone-1 h-20 w-20 b-solid  b-1"></div>
+                    <div class="bg-stone-0 h-20 w-20 b-solid  b-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------- -->
+    <!-- Simple Link No-dropdown Menu -->
+    <!-- -------------------------------------- -->
+
+    <!-- Navigation Section - Nav bar -->
+    <!-- <nav class="container nav-menu-font "> -->
+    <footer class="m-b-12 m-l-20 m-r-20 b-t-gray-3"> <!-- Top nav bar-->
+        <!-- <div class="flex flex-dir-row js-cont-between m-12 bg-lyon-lightblack "> -->
+        <!-- <div class="flex flex-dir-row js-cont-between m-12 "> -->
+        <div class="flex flex-dir-row js-cont-between "> <!-- Whole Menu -->
+
+
+            <div> <!-- Left menu-->
+                <ul class="menu-list flex gp-col-10 list-remove-bullets p-15 tx-font-13 ">
+                    <li><a class="color-gray-5 " href="#">Contact</a></li>
+                    <li><a class="color-gray-5 " href="#">Team</a></li>
+                    <li><a class="color-gray-5 " href="#">Recruitment</a></li>
+                    <li><a class="color-gray-5 " href="#">Legal</a></li>
+                    <li><a class="color-gray-5 " href="#">Advertising</a></li>
+                    <li><a class="color-gray-5 " href="#">Help</a></li>
+                </ul>
+            </div> <!-- Left menu-->
+            <div> <!-- Right menu-->
+                <ul class="menu-list flex flex-dir-row gp-col-10 list-remove-bullets p-15 tx-font-13">
+                    <li><a class="color-gray-5 " href="#">Services</a></li>
+                    <li><a class="color-gray-5 " href="#">Links</a></li>
+                    <li><a class="color-gray-5 " href="#">Mode</a></li>
+                </ul>
+            </div> <!-- Right menu-->
+        </div> <!-- Whole Menu -->
+    </footer> <!-- Top nav bar-->
+</body>
+
+</html>

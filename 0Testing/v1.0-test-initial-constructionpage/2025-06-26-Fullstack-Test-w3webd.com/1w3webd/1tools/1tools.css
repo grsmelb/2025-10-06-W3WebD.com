@@ -1,0 +1,122 @@
+/* --------------------------------------------- 
+    Program     : style.css
+    author      : GRS
+    Date        : Initial: 2025-06-25 00:51:27 IST
+    Purpose     : WebDevtools - main entry css page
+                  All Aids and tools for creating fullstack or any applications
+                  Tools for Developers
+   
+    To Do        : - Make column flex whole body (header-body-footer) so when
+                   shrunk it wont ovrelap. probably put overflow: hide??"
+                   - Test Height of Main as "max-height" instead of "height"
+                   see if the height stays for that div?? it wont??
+                     - it is not working? Div max-height should work right??
+                   - Set footer as max-height than height and check if overflow
+                   happens??  
+                   
+                   - 100vh is causing issue as height is set hard
+                   - Find what is the apple transparency menu bar
+                   - / * Testing if links under nav section only behaves like that?? 
+                   - To do menu floating and major issue will be done
+    Question      : - why flex column, with overflow-hidden is making no scroll??
+
+    Understanding : - All the issue happens due to the 100vh usage. the next element 
+                      starts right after. This overlaps when the window height is so small 
+------------------------------------------------- */
+
+/* ------------------------------------------------------------ */
+/* Clear all the preformat of the browsers */
+/* ------------------------------------------------------------ */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* ------------------------------------------------------------ */
+/* User Variables */
+/* ------------------------------------------------------------ */
+
+html {
+  /* Fallback Font as basic font sans-serif */
+  /* font-family: serif, sans-serif;
+  font-family: sans-serif, serif;
+  font-family: "Inter Tight", "Inter", sans-serif;*/
+
+  font-family: "Archivo", serif;
+  /* font-family: "Inter", "Inter Tight", sans-serif;  */
+  /* font-family: "Inter", "Inter Tight", sans-serif;  */
+
+  /* font-family: serif; */
+  /* color:lab(53.23% 80.11 67.22); */
+  /* SquintUK suggestoin. To Make rem easier 1.6rem = 16px*/
+  /* font-size: 10px; */
+}
+
+main {
+  font-family: "Inter", "Inter Tight", sans-serif;
+}
+/* 
+table,th,tr,td,caption{
+    border:  1px color-gray-2;
+    border-style: double;
+    border-style: solid;
+    border-collapse: collapse;
+    padding-left:1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+} */
+
+main a {
+  /* font-weight: 600; */
+  /* font-feature-settings: "cv02", "cv03", "cv04", "cv11"; */
+  /* text-decoration: solid underline 1px var(--color-lyon-textorange); */
+  border-bottom: 1px solid var(--color-lyon-textorange);
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 1px;
+  /* line-height:28px; */
+}
+
+main a:visited,
+main a:link {
+  color: var(--color-gray-6);
+  /* color:black; */
+}
+
+main a:hover,
+main a:active {
+  color: var(--color-gray-4);
+  /* color: black; */
+  /* border-bottom: 1px solid var(--color-lyon-orange); */
+
+  /* color:black; */
+}
+
+/* body{
+
+} */
+
+/* 
+nav{
+
+Include the apple webkit sticky from google domain page code
+  position: -webkit-sticky;
+  position:sticky;
+  
+}
+  */
+/* .flex-palette div{
+  border: solid 1px black;
+  padding:2px;
+} */
+/* 
+
+.sparrow-vars-19{
+  --sp : 19px;
+}
+
+.sparrow-font{
+  font-size: var(--sp,6px);
+} */

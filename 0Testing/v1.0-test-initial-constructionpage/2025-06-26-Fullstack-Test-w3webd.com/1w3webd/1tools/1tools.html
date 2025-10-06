@@ -1,0 +1,653 @@
+<!-- ------------------------------------------- -->
+<!--
+    Program     : 2documentation-main.html - Grid version of documentation
+    author      : GRS
+    Date        : Initial: 2025-07-10 14:20:30 IST
+    Explanation : Documentation for Sparrow Library Documentation
+                  Start main file. entry point htmls.
+    Purpose     : WebDevtools - Documentation- main entry html page
+                  
+    -------------------------------------------------------
+    2025-07-10 14:20:30 IST      GRS         Initial - Documentation main
+    
+    -------------------------------------------------------              
+    -->
+<!-- ------------------------------------------- -->
+
+<!-- Add all Meta link tabs required for all projects -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started - Sparrow Documentation | Sparrow - w3webd.com</title>
+
+    <!-- font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Include Stylesheet in modules than dumping in one file -->
+    <!-- include cleanup in every html if possible -->
+    <!-- <link rel="stylesheet" href="../../0SparrowCssFramework/0Cleanup/0cleanup.css">
+    <link rel="stylesheet" href="../../0SparrowCssFramework/0Global/1global.css">
+    <link rel="stylesheet" href="../../0SparrowCssFramework/0Core/1colors.css">
+    <link rel="stylesheet" href="../../0SparrowCssFramework/xComponents/1menus.css">
+    <link rel="stylesheet" href="../../0SparrowCssFramework/0Core/1sizing.css">
+    <link rel="stylesheet" href="../../0SparrowCssFramework/1Layout/1Grid/1grid.css">
+    <link rel="stylesheet" href="../../0SparrowCssFramework/1Layout/1Grid/1flex.css">
+    <link rel="stylesheet" href="../../0SparrowCssFramework/0Elements/1lists.css">
+    <link rel="stylesheet" href="../../0SparrowCssFramework/0Core/1typography.css">
+    <link rel="stylesheet" href="../../0SparrowCssFramework/1Borders/1border.css">
+    <link rel="stylesheet" href="../../0SparrowCssFramework/1Effects/1box-shadow.css">
+    <link rel="stylesheet" href="../../0SparrowCssFramework/0Core/1position.css"> -->
+
+    <link rel="stylesheet" href="../../0SparrowCssFramework/zMain/main.sparrow.css">
+
+    <link rel="stylesheet" href="../../0SparrowCssFramework/1style-sparrow-framework-draft.css">
+    <link rel="stylesheet" href="./1tools.css">
+
+    <!-- <link rel="stylesheet" href="./2sparrow-fw-documentation-main.css"> -->
+</head>
+
+<!-- <body class="h-min-100p"> -->
+
+<body>
+
+
+    <!-- -------------------------------------- -->
+    <!-- Simple Link No-dropdown Menu -->
+    <!-- -------------------------------------- -->
+    <!-- <div class="h-100vh w-max h-max "> -->
+    <div class="w-max h-max ">
+
+        <!-- Navigation Section - Nav bar -->
+        <!-- <nav class="container nav-menu-font "> -->
+        <nav class="p-4 bg-white pos-sticky pos-top-0 pos-left-0 pos-right-0 "> <!-- Top nav bar-->
+            <div class="flex m-l-30 m-r-30 flex-dir-row js-cont-between tx-font-14 "> <!-- Whole Menu -->
+                <div> <!-- Left menu-->
+                    <ul class="flex gp-col-10 list-remove-bullets p-4 js-cont-center">
+                        <li><a href="../../0SparrowCssFramework/1index-sparrow-framework-main.html"><img
+                                    class="logo-menu w-20 p5"
+                                    src="../../0SparrowCssFramework/zImages/favicon-sparrow-icon-small.jpeg"
+                                    alt="Site Logo Sparrow"> </a></li>
+                        <li><a class="color-gray-8 "
+                                href="../../0SparrowCssFramework/1index-sparrow-framework-main.html">Home</a></li>
+                        <li><a class="color-gray-8 " href="#">Products</a></li>
+                        <li><a class="color-gray-8 " href="#">Support</a></li>
+                        <li><a class="color-gray-8 " href="#">Services</a></li>
+                        <li><a class="color-gray-8 " href="#">About</a></li>
+                        <li><a class="color-gray-8 " href="#">Help</a></li>
+                    </ul>
+                </div> <!-- Left menu-->
+                <div> <!-- Right menu-->
+                    <!-- <ul class="flex flex-dir-row gp-col-5 list-remove-bullets p-4 js-cont-center"> -->
+                    <ul class="flex flex-dir-row gp-col-10 list-remove-bullets p-4 js-cont-center">
+                        <li>
+                            <div class="menu-x-1">
+                                <div>
+                                    <a class="color-gray-8 p-l-5  p-t-10 p-b-10 menu-button-x-1"
+                                        href="../../0SparrowCssFramework/2sparrow-fw-documentation-main.html">
+                                        Documents
+                                        <i class="fa-solid fa-chevron-down menu-icon-down-x-1 "></i>
+                                    </a>
+                                </div>
+
+                                <div
+                                    class=" flex js-cont-center shadow-y-1 tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-250 z-99 bg-white display-none menu-list-x-1">
+                                    <ul class="flex flex-dir-col js-cont-center al-item-center">
+                                        <a class="color-gray-8 w-200 p-5 p-t-10 p-l-30 m-t-8"
+                                            href="../../0SparrowCssFramework/2sparrow-fw-documentation-main.html">
+                                            <i class="fa-solid fa-book p-r-10"></i>
+                                            Sparrow Doc-Main
+                                        </a>
+                                        <a class="color-gray-8 w-200  p-5 p-l-30"
+                                            href="../../0SparrowCssFramework/2sparrow-fw-documentation-draft.html">
+                                            <i class="fa-solid fa-bars p-r-10"></i>
+                                            Sparrow Doc-Draft
+                                        </a>
+                                        <a class="color-gray-8 w-200  p-5 p-l-30"
+                                            href="../../0SparrowCssFramework/2sparrow-fw-documentation-MDN.html">
+                                            <i class="fa-solid fa-border-top-left p-r-10"></i>
+                                            Sparrow Doc-MDN
+                                        </a>
+                                        <a class="color-gray-8 w-200  p-5 p-b-10 p-l-30 m-b-8" href="./1tools.html">
+                                            <i class="fa-solid fa-money-bills p-r-6"></i>
+                                            Web Tools
+                                        </a>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-x-2">
+                                <div>
+                                    <a class="color-gray-8  p-r-20 p-t-10 p-b-10 menu-button-x-2" href="#">
+                                        Components
+                                        <i class="fa-solid fa-chevron-down menu-icon-down-x-1"></i>
+                                        <!-- <i class="fa-solid fa-caret-down menu-icon-down-1"></i> -->
+
+                                    </a>
+
+                                </div>
+                                <!--                                
+                                <button>
+                                    En
+                                </button> 
+                                
+                                -->
+                                <!-- class=" flex js-cont-center m-30 w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute hidden" -->
+                                <!-- class=" flex js-cont-center m-2 w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute display-none" -->
+                                <!-- class=" flex js-cont-center m-2 w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute pos-right-30 m-t-10 z-1 shadow-gl-y-5 display-none menu-list-1 " -->
+                                <!-- class=" flex js-cont-center w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute pos-right-30 z-99 bg-white shadow-gl-y-5 display-none menu-list-1 "> -->
+                                <!-- class=" flex js-cont-center w-150 h600 b-solid b-width-1 b-lightgray-1 b-round-10 tx-font-13 pos-absolute pos-right-60 z-99 bg-white display-none menu-list-1 "> -->
+                                <!-- class=" flex js-cont-center b-solid b-width-1 b-lightgray-1 tx-font-13 pos-absolute pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                                <!-- class=" flex js-cont-center  shadow-gl-y-5 tx-font-13 pos-absolute pos-top-40 b-lightgray-1 m-t-5-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                                <!-- class=" flex js-cont-center  shadow-gl-y-5 tx-font-13 b-lightgray-1 pos-absolute pos-top-27 m-t-5-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                                <!-- class=" flex js-cont-center  shadow-gl-y-xham  tx-font-13  pos-absolute pos-top-35 m-t-3-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                                <!-- class=" flex js-cont-center shadow-gl-y-g tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+                                <!-- class=" flex js-cont-center shadow-y-1 tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-60 z-99 bg-white display-none menu-list-1"> -->
+
+                                <div
+                                    class=" flex js-cont-center shadow-y-1 tx-font-14  pos-absolute pos-top-35 m-t-3-minus pos-right-125 z-99 bg-white display-none menu-list-x-2">
+                                    <ul class="flex flex-dir-col js-cont-center al-item-center">
+                                        <a class="color-gray-8 w-200 p-5 p-t-10 p-l-30 m-t-8"
+                                            href="../../0SparrowCssFramework/0Core/1colors.html">
+                                            <i class="fa-solid fa-palette p-r-10"></i>
+                                            Colors
+
+                                        </a>
+                                        <a class="color-gray-8 w-200  p-5 p-l-30"
+                                            href="../../0SparrowCssFramework/xComponents/1menus.html">
+                                            <i class="fa-solid fa-bars p-r-10"></i>
+                                            Menus
+                                        </a>
+                                        <a class="color-gray-8 w-200  p-5 p-l-30"
+                                            href="../../0SparrowCssFramework/1Borders/1border.html">
+                                            <i class="fa-solid fa-border-top-left p-r-10"></i>
+                                            Border
+                                        </a>
+                                        <a class="color-gray-8 w-200  p-5 p-l-30 "
+                                            href="../../0SparrowCssFramework/1Effects/1box-shadow.html">
+                                            <i class="fa-solid fa-money-bills p-r-6"></i>
+                                            Box Shadow
+                                        </a>
+                                        <a class="color-gray-8 w-200  p-5 p-l-30 " href="../../0SparrowCssFramework/1Effects/1search-boxes.html">
+                                            <i class="fa-solid fa-search p-r-6"></i>
+                                            Search Boxes</a>
+                                        <a class="color-gray-8 w-200  p-5 p-b-10 p-l-30 m-b-8"
+                                            href="../../0SparrowCssFramework/x-web-components/0core/0web-component-examples.html">
+                                            <i class="fa-solid fa-screwdriver-wrench p-r-6"></i>
+                                            Web Components
+                                        </a>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li><a class="color-gray-8 " href="#">Login</a></li>
+                        <li><a class="color-gray-8 " href="#">Signup</a></li>
+                        <li><a class="color-gray-8" href="#">En</a></li>
+                    </ul>
+                </div> <!-- Right menu-->
+            </div> <!-- Whole Menu -->
+        </nav> <!-- Top nav bar-->
+
+        <main class="flex flex-dir-col js-cont-center al-item-center m-50 tx-font-14 h-min-90vh  ">
+
+
+            <article>
+                <!-- <table class="w-min-90vw color-gray-6 b-solid b-width-1 b-gray-2 b-round-14 p-t-10 p-l-30 p-r-30 p-b-10"> -->
+                <!-- <table class="w-min-90vw color-gray-8 b-solid b-width-1 b-gray-2 b-round-14 "> -->
+                <table class="w-min-90vw color-gray-7 b-solid b-width-1 b-gray-2 b-round-14 ">
+                    <thead>
+                        <!-- <caption class="color-gray-9 font-weight-600 tx-font-16 p-20"> External Web Dev Tools</caption> -->
+                        <!-- <caption class="color-gray-8 p-20"> <h1 class="font-weight-400">Assistant External Web Dev Tools</h1></caption> -->
+                        <caption class="color-gray-8 p-20">
+                            <!-- <h2 class="t-align-start font-weight-400">Assistant External Web Dev Tools</h2> -->
+                            <h2 class="t-align-start font-weight-400">Modeling Web Dev Doc</h2>
+                        </caption>
+                        <!-- <tr class="tx-font-13 color-gray-8 bg-blue-1 "  > -->
+                        <tr class="tx-font-14 color-gray-5   ">
+
+                            <th class=" p-t-10 p-b-10 p-l-30 p-r-30 b-b-gray-2 w-200" scope="col">Tool</th>
+                            <th class=" p-t-10 p-b-10 p-l-30 p-r-30 b-b-gray-2 w-300" scope="col">Source</th>
+                            <th class=" p-t-10 p-b-10 p-l-30 p-r-30 b-b-gray-2" scope="col">Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2  " rowspan="5">
+                                <!-- <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2"> -->
+
+                                <div>
+                                    Web Docs
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 b-b-gray-2">
+                                <div>
+                                    <a href="https://mintlify.com/" target="_blank">
+                                        Mintlify
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                                <div><a href="https://mintlify.com/docs" target="_blank">
+                                        Mintlify-Docs
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                                Mintlify. Documentation framework. GetLago is good. Does Tailwind use it? it is almost
+                                similar.
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                        <div>
+                            Color-Palette
+                        </div>
+                    </td> -->
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 b-b-gray-2">
+                                <div>
+                                    <a href="https://tailwindcss.com/" target="_blank">
+                                        Tailwind Home
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                                <div><a href="https://tailwindcss.com/docs" target="_blank">
+                                        Tailwind Docs
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                                <div><a href="https://catalyst.tailwindui.com/docs" target="_blank">
+                                        Tailwind UI-Kit catalyst
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                                Tailwind. Beautiful website. 4th version. Initial was in vercel.app for free.
+                                Create a better option as all have to write inline css. .</td>
+                        </tr>
+                        <tr>
+                            <!-- <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                        <div>
+                            Online Code Editor
+                        </div>
+                    </td> -->
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 b-b-gray-2">
+                                <div>
+                                    <a href="https://www.tutorialrepublic.com/" target="_blank">
+                                        Tutorial Republic
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                                Copy cat? has Google ads on the side. Ad info payment info. Has some
+                                entities listed well categorized.
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                        <div>
+                            Online Code Editor
+                        </div>
+                    </td> -->
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 b-b-gray-2">
+                                <div>
+                                    <a href="https://www.geeksforgeeks.org/" target="_blank">
+                                        GeeksforGeeks
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                                Copy cat of w3. Good professional look. many are paid training.
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2" >
+                                <div>
+                                    Online Code Editor
+                                </div>
+                            </td> -->
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2">
+                                <div>
+                                    <a href="https://developer.mozilla.org/en-US/" target="_blank">
+                                        MDN Docs
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2">
+                                Has webdocs format but not clean and simple. Too much line spaces. but
+                                Content is huge, exhaustive.</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </article>
+
+
+            <article>
+                <!-- <table class="w-min-90vw color-gray-6 b-solid b-width-1 b-gray-2 b-round-14 p-t-10 p-l-30 p-r-30 p-b-10"> -->
+                <!-- <table class="w-min-90vw color-gray-8 b-solid b-width-1 b-gray-2 b-round-14 "> -->
+                <table class="w-min-90vw color-gray-7 b-solid b-width-1 b-gray-2 b-round-14 m-t-100">
+                    <thead>
+                        <!-- <caption class="color-gray-9 font-weight-600 tx-font-16 p-20"> External Web Dev Tools</caption> -->
+                        <!-- <caption class="color-gray-8 p-20"> <h1 class="font-weight-400">Assistant External Web Dev Tools</h1></caption> -->
+                        <caption class="color-gray-8 p-20">
+                            <!-- <h2 class="t-align-start font-weight-400">Assistant External Web Dev Tools</h2> -->
+                            <h2 class="t-align-start font-weight-400">Assistant External Web Dev Tools</h2>
+                        </caption>
+                        <!-- <tr class="tx-font-13 color-gray-8 bg-blue-1 "  > -->
+                        <tr class="tx-font-14 color-gray-5   ">
+
+                            <th class=" p-t-10 p-b-10 p-l-30 p-r-30 b-b-gray-2 w-200" scope="col">Tool</th>
+                            <th class=" p-t-10 p-b-10 p-l-30 p-r-30 b-b-gray-2 w-300" scope="col">Source</th>
+                            <th class=" p-t-10 p-b-10 p-l-30 p-r-30 b-b-gray-2" scope="col">Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                                <div>
+                                    Icons
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 b-b-gray-2">
+                                <div>
+                                    <a href="https://fontawesome.com/" target="_blank">
+                                        Font-Awesome-Home
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                                <div><a href="https://fontawesome.com/search?ic=free" target="_blank">
+                                        Font-Awesome-Free-Icons
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                                <div><a href="https://cdnjs.com/libraries/font-awesome" target="_blank">
+                                        CDNJS library inclusion
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">Free Icons. Open Source. Paid
+                                Icons as
+                                well. Understand .css file and get more pro content by yourself.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                                <div>
+                                    Color-Palette
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 b-b-gray-2">
+                                <div>
+                                    <a href="https://coolors.co/" target="_blank">
+                                        Coolors.co - Home
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                                <div><a href="https://coolors.co/generate" target="_blank">
+                                        Coolors - Palette Generator
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                                <div><a href="https://coolors.co/contrast-checker" target="_blank">
+                                        Contrast Checker
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">Italian Weekend hobby
+                                project.
+                                Successful and million visits. Good clean white-black design. Dream job.
+                                Has contrast checker and other color related info .</td>
+                        </tr>
+                        <tr>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2" rowspan="4">
+                                <div>
+                                    Online Code Editor
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 b-b-gray-2">
+                                <div>
+                                    <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+                                        Programiz - Editor
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                                <div><a href="https://programiz.pro/course/learn-html" target="_blank">
+                                        Programiz - Learning
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                                <div><a href="mailto: contact@parewalabs.com">
+                                        Programiz - email contact
+                                        <i class="fa-solid fa-email color-gray-5"></i>
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                                Azimpat, Nepal. Nice UI and code and output presentation. They have online eductation??
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2" >
+                                <div>
+                                    Online Code Editor
+                                </div>
+                            </td> -->
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 b-b-gray-2">
+                                <div>
+                                    <a href="https://onlinecompiler.app/" target="_blank">
+                                        OnlineCompiler.app
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                                Telugu Company. Hyderabad? So many languages option to compile.</td>
+                        </tr>
+                        <tr>
+                            <!-- <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2 ">
+                                <div>
+                                    Online Code Editor
+                                </div>
+                            </td> -->
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 b-b-gray-2">
+                                <div>
+                                    <a href="https://www.codechef.com/ide" target="_blank">
+                                        Codechef.com
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                                Karnataka Company. Online Courses as well. Good website.5000Rs for courses.
+                                <!--                                 
+                                <br><br>
+                                <address class="line-height-1_50">
+                                    Old Airport Rd, <br>
+                                    Domlur I Stage, <br>
+                                    1st Stage, DOMLUR, <br>
+                                    Bengaluru, Karnataka 560071
+                                </address> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2 ">
+                                <div>
+                                    Online Code Editor
+                                </div>
+                            </td> -->
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 b-b-gray-2">
+                                <div>
+                                    <a href="https://www.code.org" target="_blank">
+                                        Code.org
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+                                US Company. Two arabs. Well funded non profit. Clean Good Website. Could imitate that.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2 ">
+                                <div>
+                                    Form Submission (post/get)
+                                </div>
+                            </td>
+                            <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 b-b-gray-2">
+                                <div>
+                                    <a href="https://httpbin.org" target="_blank">
+                                        httpbin.org
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://httpbin.org/post" target="_blank">
+                                        httpbin.org/post
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://github.com/requests/httpbin" target="_blank">
+                                        httpbin.org - Github
+                                        <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                                    </a>
+                                </div>
+    </div>
+    <div>
+        <a href="https://kennethreitz.org/" target="_blank">
+            Kenneth Reitz Website
+            <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+        </a>
+    </div>
+    </td>
+    <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 b-b-gray-2">
+        Submit form. It replies with form info as json. <br>
+        Done by Kenneth Reitz - Creator of Requests & Cerifi — trusted by millions of developers worldwide
+
+    </td>
+    </tr>
+
+    <tr>
+        <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 ">
+            <div>
+                Frontend Testing - JSON data from backend
+            </div>
+        </td>
+        <td class="p-t-5 p-b-5 p-l-30 p-r-30  line-height-2 ">
+            <div>
+                <a href="https://dummyjson.com/" target="_blank">
+                    DummyJson.com
+                    <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/Ovi/DummyJSON" target="_blank">
+                    DummJson Github
+                    <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://dummyjson.com/docs" target="_blank">
+                    DummyJson documents
+                    <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                </a>
+            </div>
+            </div>
+            <div>
+                <a href="https://kennethreitz.org/" target="_blank">
+                    Kenneth Reitz Website
+                    <i class="fa-solid fa-square-arrow-up-right color-gray-5"></i>
+                </a>
+            </div>
+        </td>
+        <td class="p-t-5 p-b-5 p-l-30 p-r-30 line-height-2 ">
+            Free Fake REST API for Placeholder JSON Data. Get instant dummy JSON data for your frontend with DummyJSON
+            Server — no backend setup needed!
+            <br>
+            Also Dummy Photos placeholders.
+
+        </td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    </tfoot>
+    </table>
+    </article>
+
+
+
+    </main>
+
+    <aside>
+
+
+    </aside>
+
+
+    <!-- Navigation Section - Nav bar -->
+    <!-- <nav class="container nav-menu-font "> -->
+    <footer class="m-b-12 m-l-20 m-r-20 m-t-50 b-t-gray-3"> <!-- Top nav bar-->
+        <!-- <div class="flex flex-dir-row js-cont-between m-12 bg-lyon-lightblack "> -->
+        <!-- <div class="flex flex-dir-row js-cont-between m-12 "> -->
+        <div class="flex flex-dir-row js-cont-between "> <!-- Whole Menu -->
+
+
+            <div> <!-- Left menu-->
+                <ul class="menu-list flex gp-col-10 list-remove-bullets p-15 tx-font-13 ">
+                    <li><a class="color-gray-5 " href="#">Contact</a></li>
+                    <li><a class="color-gray-5 " href="#">Team</a></li>
+                    <li><a class="color-gray-5 " href="#">Recruitment</a></li>
+                    <li><a class="color-gray-5 " href="#">Legal</a></li>
+                    <li><a class="color-gray-5 " href="#">Advertising</a></li>
+                    <li><a class="color-gray-5 " href="#">Help</a></li>
+                </ul>
+            </div> <!-- Left menu-->
+            <div> <!-- Right menu-->
+                <ul class="menu-list flex flex-dir-row gp-col-10 list-remove-bullets p-15 tx-font-13">
+                    <li><a class="color-gray-5 " href="#">Services</a></li>
+                    <li><a class="color-gray-5 " href="#">Links</a></li>
+                    <li><a class="color-gray-5 " href="#">Mode</a></li>
+                </ul>
+            </div> <!-- Right menu-->
+        </div> <!-- Whole Menu -->
+    </footer> <!-- Top nav bar-->
+
+</body>
+<script src="../../0SparrowCssFramework/11script-mytemplate.js">
+
+</script>
+
+</html>

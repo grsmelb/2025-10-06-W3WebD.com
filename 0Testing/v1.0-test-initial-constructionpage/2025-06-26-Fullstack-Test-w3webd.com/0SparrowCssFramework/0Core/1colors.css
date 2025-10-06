@@ -1,0 +1,1987 @@
+/* --------------------------------------------- 
+    Program         : 1colors.css
+    author          : GRS
+    Date            : Initial: 2025-07-06 17:43:17 IST
+    Purpose         : Sparrow CSS Framework
+                      Create color palette
+
+    Details         : Create color variables
+                      
+    To Do           : - easier naming convention
+    
+    Wish            : - Make more beautiful vibrant color palettes
+                   
+    Question        :    
+
+    Understanding   : 
+    Log
+    ------------------------------------------------- 
+    2025-07-06      GRS     Initial Code
+-------------------------------------------------------- */
+
+/* ------------------------------------------------------------ */
+/* Create color variables*/
+/* ------------------------------------------------------------ */
+/* Core Colors : Red, Orange, Amber, Yellow, Lime, Green,Emerald, Teal, Cyan, Sky, Blue, Indigo, Violet, Purple, 
+ fuchsia, pink, rose, slate, gray, zinc, neutral, stone, black, white  */
+/*  */
+
+:root {
+  /* test color  */
+  --color-test-0: oklch(40.1% 0.123 21.57);
+  /* Apple colors */
+  --apl-base-text-color-black: #1d1d1f;
+  --apl-base-text-color-white: #f5f5f7;
+  --apl-base-page-background-color: #f5f5f7;
+
+  /* Lyon Color and my Theme */
+  --color-lyon-orange: #d64100;
+  --color-lyon-blue: #5a7696;
+  --color-lyon-grey: #666666;
+  --color-lyon-lightgrey: #ededed;
+  --color-lyon-textorange: #ff550a;
+  --color-lyon-lightblack: #292929;
+  /* Tail Change the palette later */
+  /* Change to RGB-A format from oklch */
+  --color-red-0: oklch(0.971 0.013 17.38);
+  --color-red-1: oklch(0.936 0.032 17.717);
+  --color-red-2: oklch(0.885 0.062 18.334);
+  --color-red-3: oklch(0.808 0.114 19.571);
+  --color-red-4: oklch(0.704 0.191 22.216);
+  --color-red-5: oklch(0.637 0.237 25.331);
+  --color-red-6: oklch(0.577 0.245 27.325);
+  --color-red-7: oklch(0.505 0.213 27.518);
+  --color-red-8: oklch(0.444 0.177 26.899);
+  --color-red-9: oklch(0.396 0.141 25.723);
+  --color-red-10: oklch(0.258 0.092 26.042);
+  --color-orange-0: oklch(0.98 0.016 73.684);
+  --color-orange-1: oklch(0.954 0.038 75.164);
+  --color-orange-2: oklch(0.901 0.076 70.697);
+  --color-orange-3: oklch(0.837 0.128 66.29);
+  --color-orange-4: oklch(0.75 0.183 55.934);
+  --color-orange-5: oklch(0.705 0.213 47.604);
+  --color-orange-6: oklch(0.646 0.222 41.116);
+  --color-orange-7: oklch(0.553 0.195 38.402);
+  --color-orange-8: oklch(0.47 0.157 37.304);
+  --color-orange-9: oklch(0.408 0.123 38.172);
+  --color-orange-10: oklch(0.266 0.079 36.259);
+  --color-amber-0: oklch(0.987 0.022 95.277);
+  --color-amber-1: oklch(0.962 0.059 95.617);
+  --color-amber-2: oklch(0.924 0.12 95.746);
+  --color-amber-3: oklch(0.879 0.169 91.605);
+  --color-amber-4: oklch(0.828 0.189 84.429);
+  --color-amber-5: oklch(0.769 0.188 70.08);
+  --color-amber-6: oklch(0.666 0.179 58.318);
+  --color-amber-7: oklch(0.555 0.163 48.998);
+  --color-amber-8: oklch(0.473 0.137 46.201);
+  --color-amber-9: oklch(0.414 0.112 45.904);
+  --color-amber-10: oklch(0.279 0.077 45.635);
+  --color-yellow-0: oklch(0.987 0.026 102.212);
+  --color-yellow-1: oklch(0.973 0.071 103.193);
+  --color-yellow-2: oklch(0.945 0.129 101.54);
+  --color-yellow-3: oklch(0.905 0.182 98.111);
+  --color-yellow-4: oklch(0.852 0.199 91.936);
+  --color-yellow-5: oklch(0.795 0.184 86.047);
+  --color-yellow-6: oklch(0.681 0.162 75.834);
+  --color-yellow-7: oklch(0.554 0.135 66.442);
+  --color-yellow-8: oklch(0.476 0.114 61.907);
+  --color-yellow-9: oklch(0.421 0.095 57.708);
+  --color-yellow-10: oklch(0.286 0.066 53.813);
+  --color-lime-0: oklch(0.986 0.031 120.757);
+  --color-lime-1: oklch(0.967 0.067 122.328);
+  --color-lime-2: oklch(0.938 0.127 124.321);
+  --color-lime-3: oklch(0.897 0.196 126.665);
+  --color-lime-4: oklch(0.841 0.238 128.85);
+  --color-lime-5: oklch(0.768 0.233 130.85);
+  --color-lime-6: oklch(0.648 0.2 131.684);
+  --color-lime-7: oklch(0.532 0.157 131.589);
+  --color-lime-8: oklch(0.453 0.124 130.933);
+  --color-lime-9: oklch(0.405 0.101 131.063);
+  --color-lime-10: oklch(0.274 0.072 132.109);
+  --color-green-0: oklch(0.982 0.018 155.826);
+  --color-green-1: oklch(0.962 0.044 156.743);
+  --color-green-2: oklch(0.925 0.084 155.995);
+  --color-green-3: oklch(0.871 0.15 154.449);
+  --color-green-4: oklch(0.792 0.209 151.711);
+  --color-green-5: oklch(0.723 0.219 149.579);
+  --color-green-6: oklch(0.627 0.194 149.214);
+  --color-green-7: oklch(0.527 0.154 150.069);
+  --color-green-8: oklch(0.448 0.119 151.328);
+  --color-green-9: oklch(0.393 0.095 152.535);
+  --color-green-10: oklch(0.266 0.065 152.934);
+  --color-emerald-0: oklch(0.979 0.021 166.113);
+  --color-emerald-1: oklch(0.95 0.052 163.051);
+  --color-emerald-2: oklch(0.905 0.093 164.15);
+  --color-emerald-3: oklch(0.845 0.143 164.978);
+  --color-emerald-4: oklch(0.765 0.177 163.223);
+  --color-emerald-5: oklch(0.696 0.17 162.48);
+  --color-emerald-6: oklch(0.596 0.145 163.225);
+  --color-emerald-7: oklch(0.508 0.118 165.612);
+  --color-emerald-8: oklch(0.432 0.095 166.913);
+  --color-emerald-9: oklch(0.378 0.077 168.94);
+  --color-emerald-10: oklch(0.262 0.051 172.552);
+  --color-teal-0: oklch(0.984 0.014 180.72);
+  --color-teal-1: oklch(0.953 0.051 180.801);
+  --color-teal-2: oklch(0.91 0.096 180.426);
+  --color-teal-3: oklch(0.855 0.138 181.071);
+  --color-teal-4: oklch(0.777 0.152 181.912);
+  --color-teal-5: oklch(0.704 0.14 182.503);
+  --color-teal-6: oklch(0.6 0.118 184.704);
+  --color-teal-7: oklch(0.511 0.096 186.391);
+  --color-teal-8: oklch(0.437 0.078 188.216);
+  --color-teal-9: oklch(0.386 0.063 188.416);
+  --color-teal-10: oklch(0.277 0.046 192.524);
+  --color-cyan-0: oklch(0.984 0.019 200.873);
+  --color-cyan-1: oklch(0.956 0.045 203.388);
+  --color-cyan-2: oklch(0.917 0.08 205.041);
+  --color-cyan-3: oklch(0.865 0.127 207.078);
+  --color-cyan-4: oklch(0.789 0.154 211.53);
+  --color-cyan-5: oklch(0.715 0.143 215.221);
+  --color-cyan-6: oklch(0.609 0.126 221.723);
+  --color-cyan-7: oklch(0.52 0.105 223.128);
+  --color-cyan-8: oklch(0.45 0.085 224.283);
+  --color-cyan-9: oklch(0.398 0.07 227.392);
+  --color-cyan-10: oklch(0.302 0.056 229.695);
+  --color-sky-0: oklch(0.977 0.013 236.62);
+  --color-sky-1: oklch(0.951 0.026 236.824);
+  --color-sky-2: oklch(0.901 0.058 230.902);
+  --color-sky-3: oklch(0.828 0.111 230.318);
+  --color-sky-4: oklch(0.746 0.16 232.661);
+  --color-sky-5: oklch(0.685 0.169 237.323);
+  --color-sky-6: oklch(0.588 0.158 241.966);
+  --color-sky-7: oklch(0.5 0.134 242.749);
+  --color-sky-8: oklch(0.443 0.11 240.79);
+  --color-sky-9: oklch(0.391 0.09 240.876);
+  --color-sky-10: oklch(0.293 0.066 243.157);
+  --color-blue-0: oklch(0.97 0.014 254.604);
+  --color-blue-1: oklch(0.932 0.032 255.585);
+  --color-blue-2: oklch(0.882 0.059 254.128);
+  --color-blue-3: oklch(0.809 0.105 251.813);
+  --color-blue-4: oklch(0.707 0.165 254.624);
+  --color-blue-5: oklch(0.623 0.214 259.815);
+  --color-blue-6: oklch(0.546 0.245 262.881);
+  --color-blue-7: oklch(0.488 0.243 264.376);
+  --color-blue-8: oklch(0.424 0.199 265.638);
+  --color-blue-9: oklch(0.379 0.146 265.522);
+  --color-blue-10: oklch(0.282 0.091 267.935);
+  --color-indigo-0: oklch(0.962 0.018 272.314);
+  --color-indigo-1: oklch(0.93 0.034 272.788);
+  --color-indigo-2: oklch(0.87 0.065 274.039);
+  --color-indigo-3: oklch(0.785 0.115 274.713);
+  --color-indigo-4: oklch(0.673 0.182 276.935);
+  --color-indigo-5: oklch(0.585 0.233 277.117);
+  --color-indigo-6: oklch(0.511 0.262 276.966);
+  --color-indigo-7: oklch(0.457 0.24 277.023);
+  --color-indigo-8: oklch(0.398 0.195 277.366);
+  --color-indigo-9: oklch(0.359 0.144 278.697);
+  --color-indigo-10: oklch(0.257 0.09 281.288);
+  --color-violet-0: oklch(0.969 0.016 293.756);
+  --color-violet-1: oklch(0.943 0.029 294.588);
+  --color-violet-2: oklch(0.894 0.057 293.283);
+  --color-violet-3: oklch(0.811 0.111 293.571);
+  --color-violet-4: oklch(0.702 0.183 293.541);
+  --color-violet-5: oklch(0.606 0.25 292.717);
+  --color-violet-6: oklch(0.541 0.281 293.009);
+  --color-violet-7: oklch(0.491 0.27 292.581);
+  --color-violet-8: oklch(0.432 0.232 292.759);
+  --color-violet-9: oklch(0.38 0.189 293.745);
+  --color-violet-10: oklch(0.283 0.141 291.089);
+  --color-purple-0: oklch(0.977 0.014 308.299);
+  --color-purple-1: oklch(0.946 0.033 307.174);
+  --color-purple-2: oklch(0.902 0.063 306.703);
+  --color-purple-3: oklch(0.827 0.119 306.383);
+  --color-purple-4: oklch(0.714 0.203 305.504);
+  --color-purple-5: oklch(0.627 0.265 303.9);
+  --color-purple-6: oklch(0.558 0.288 302.321);
+  --color-purple-7: oklch(0.496 0.265 301.924);
+  --color-purple-8: oklch(0.438 0.218 303.724);
+  --color-purple-9: oklch(0.381 0.176 304.987);
+  --color-purple-10: oklch(0.291 0.149 302.717);
+  --color-fuchsia-0: oklch(0.977 0.017 320.058);
+  --color-fuchsia-1: oklch(0.952 0.037 318.852);
+  --color-fuchsia-2: oklch(0.903 0.076 319.62);
+  --color-fuchsia-3: oklch(0.833 0.145 321.434);
+  --color-fuchsia-4: oklch(0.74 0.238 322.16);
+  --color-fuchsia-5: oklch(0.667 0.295 322.15);
+  --color-fuchsia-6: oklch(0.591 0.293 322.896);
+  --color-fuchsia-7: oklch(0.518 0.253 323.949);
+  --color-fuchsia-8: oklch(0.452 0.211 324.591);
+  --color-fuchsia-9: oklch(0.401 0.17 325.612);
+  --color-fuchsia-10: oklch(0.293 0.136 325.661);
+  --color-pink-0: oklch(0.971 0.014 343.198);
+  --color-pink-1: oklch(0.948 0.028 342.258);
+  --color-pink-2: oklch(0.899 0.061 343.231);
+  --color-pink-3: oklch(0.823 0.12 346.018);
+  --color-pink-4: oklch(0.718 0.202 349.761);
+  --color-pink-5: oklch(0.656 0.241 354.308);
+  --color-pink-6: oklch(0.592 0.249 0.584);
+  --color-pink-7: oklch(0.525 0.223 3.958);
+  --color-pink-8: oklch(0.459 0.187 3.815);
+  --color-pink-9: oklch(0.408 0.153 2.432);
+  --color-pink-10: oklch(0.284 0.109 3.907);
+  --color-rose-0: oklch(0.969 0.015 12.422);
+  --color-rose-1: oklch(0.941 0.03 12.58);
+  --color-rose-2: oklch(0.892 0.058 10.001);
+  --color-rose-3: oklch(0.81 0.117 11.638);
+  --color-rose-4: oklch(0.712 0.194 13.428);
+  --color-rose-5: oklch(0.645 0.246 16.439);
+  --color-rose-6: oklch(0.586 0.253 17.585);
+  --color-rose-7: oklch(0.514 0.222 16.935);
+  --color-rose-8: oklch(0.455 0.188 13.697);
+  --color-rose-9: oklch(0.41 0.159 10.272);
+  --color-rose-10: oklch(0.271 0.105 12.094);
+  --color-slate-0: oklch(0.984 0.003 247.858);
+  --color-slate-1: oklch(0.968 0.007 247.896);
+  --color-slate-2: oklch(0.929 0.013 255.508);
+  --color-slate-3: oklch(0.869 0.022 252.894);
+  --color-slate-4: oklch(0.704 0.04 256.788);
+  --color-slate-5: oklch(0.554 0.046 257.417);
+  --color-slate-6: oklch(0.446 0.043 257.281);
+  --color-slate-7: oklch(0.372 0.044 257.287);
+  --color-slate-8: oklch(0.279 0.041 260.031);
+  --color-slate-9: oklch(0.208 0.042 265.755);
+  --color-slate-10: oklch(0.129 0.042 264.695);
+  --color-gray-0: oklch(0.985 0.002 247.839);
+  --color-gray-1: oklch(0.967 0.003 264.542);
+  --color-gray-2: oklch(0.928 0.006 264.531);
+  --color-gray-3: oklch(0.872 0.01 258.338);
+  --color-gray-4: oklch(0.707 0.022 261.325);
+  --color-gray-5: oklch(0.551 0.027 264.364);
+  --color-gray-6: oklch(0.446 0.03 256.802);
+  --color-gray-7: oklch(0.373 0.034 259.733);
+  --color-gray-8: oklch(0.278 0.033 256.848);
+  --color-gray-9: oklch(0.21 0.034 264.665);
+  --color-gray-10: oklch(0.13 0.028 261.692);
+  --color-zinc-0: oklch(0.985 0 0);
+  --color-zinc-1: oklch(0.967 0.001 286.375);
+  --color-zinc-2: oklch(0.92 0.004 286.32);
+  --color-zinc-3: oklch(0.871 0.006 286.286);
+  --color-zinc-4: oklch(0.705 0.015 286.067);
+  --color-zinc-5: oklch(0.552 0.016 285.938);
+  --color-zinc-6: oklch(0.442 0.017 285.786);
+  --color-zinc-7: oklch(0.37 0.013 285.805);
+  --color-zinc-8: oklch(0.274 0.006 286.033);
+  --color-zinc-9: oklch(0.21 0.006 285.885);
+  --color-zinc-10: oklch(0.141 0.005 285.823);
+  --color-neutral-0: oklch(0.985 0 0);
+  --color-neutral-1: oklch(0.97 0 0);
+  --color-neutral-2: oklch(0.922 0 0);
+  --color-neutral-3: oklch(0.87 0 0);
+  --color-neutral-4: oklch(0.708 0 0);
+  --color-neutral-5: oklch(0.556 0 0);
+  --color-neutral-6: oklch(0.439 0 0);
+  --color-neutral-7: oklch(0.371 0 0);
+  --color-neutral-8: oklch(0.269 0 0);
+  --color-neutral-9: oklch(0.205 0 0);
+  --color-neutral-10: oklch(0.145 0 0);
+  --color-stone-0: oklch(0.985 0.001 106.423);
+  --color-stone-1: oklch(0.97 0.001 106.424);
+  --color-stone-2: oklch(0.923 0.003 48.717);
+  --color-stone-3: oklch(0.869 0.005 56.366);
+  --color-stone-4: oklch(0.709 0.01 56.259);
+  --color-stone-5: oklch(0.553 0.013 58.071);
+  --color-stone-6: oklch(0.444 0.011 73.639);
+  --color-stone-7: oklch(0.374 0.01 67.558);
+  --color-stone-8: oklch(0.268 0.007 34.298);
+  --color-stone-9: oklch(0.216 0.006 56.043);
+  --color-stone-10: oklch(0.147 0.004 49.25);
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+/* ------------------------------------- */
+/* Special Colors */
+/* ------------------------------------- */
+
+.color-appl-black{
+  color:var(--apl-base-text-color-black);
+}
+
+
+/* ------------------------------------- */
+/* Color White Black core individual palette */
+/* ------------------------------------- */
+.color-black {
+  color: var(--color-black);
+}
+.color-white {
+  color: var(--color-white);
+}
+
+.color-lyon-orange {
+  color: var(--color-lyon-orange);
+}
+.color-lyon-blue {
+  color: var(--color-lyon-blue);
+}
+.color-lyon-grey {
+  color: var(--color-lyon-grey);
+}
+.color-lyon-lightgrey {
+  color: var(--color-lyon-lightgrey);
+}
+.color-lyon-textorange {
+  color: var(--color-lyon-textorange);
+}
+.color-lyon-lightblack {
+  color: var(--color-lyon-lightblack);
+}
+
+/* ------------------------------------- */
+/* Color Red core individual palette */
+/* ------------------------------------- */
+.color-red-0 {
+  color: var(--color-red-0);
+}
+.color-red-1 {
+  color: var(--color-red-1);
+}
+.color-red-2 {
+  color: var(--color-red-2);
+}
+.color-red-3 {
+  color: var(--color-red-3);
+}
+.color-red-4 {
+  color: var(--color-red-4);
+}
+.color-red-5 {
+  color: var(--color-red-5);
+}
+.color-red-6 {
+  color: var(--color-red-6);
+}
+.color-red-7 {
+  color: var(--color-red-7);
+}
+.color-red-8 {
+  color: var(--color-red-8);
+}
+.color-red-9 {
+  color: var(--color-red-9);
+}
+.color-red-10 {
+  color: var(--color-red-10);
+}
+
+/* ------------------------------------- */
+/* Color Orange core individual palette */
+/* ------------------------------------- */
+.color-orange-0 {
+  color: var(--color-orange-0);
+}
+.color-orange-1 {
+  color: var(--color-orange-1);
+}
+.color-orange-2 {
+  color: var(--color-orange-2);
+}
+.color-orange-3 {
+  color: var(--color-orange-3);
+}
+.color-orange-4 {
+  color: var(--color-orange-4);
+}
+.color-orange-5 {
+  color: var(--color-orange-5);
+}
+.color-orange-6 {
+  color: var(--color-orange-6);
+}
+.color-orange-7 {
+  color: var(--color-orange-7);
+}
+.color-orange-8 {
+  color: var(--color-orange-8);
+}
+.color-orange-9 {
+  color: var(--color-orange-9);
+}
+.color-orange-10 {
+  color: var(--color-orange-10);
+}
+
+/* ------------------------------------- */
+/* Color Amber core individual palette */
+/* ------------------------------------- */
+.color-amber-0 {
+  color: var(--color-amber-0);
+}
+.color-amber-1 {
+  color: var(--color-amber-1);
+}
+.color-amber-2 {
+  color: var(--color-amber-2);
+}
+.color-amber-3 {
+  color: var(--color-amber-3);
+}
+.color-amber-4 {
+  color: var(--color-amber-4);
+}
+.color-amber-5 {
+  color: var(--color-amber-5);
+}
+.color-amber-6 {
+  color: var(--color-amber-6);
+}
+.color-amber-7 {
+  color: var(--color-amber-7);
+}
+.color-amber-8 {
+  color: var(--color-amber-8);
+}
+.color-amber-9 {
+  color: var(--color-amber-9);
+}
+.color-amber-10 {
+  color: var(--color-amber-10);
+}
+
+/* ------------------------------------- */
+/* Color Yellow core individual palette */
+/* ------------------------------------- */
+.color-yellow-0 {
+  color: var(--color-yellow-0);
+}
+.color-yellow-1 {
+  color: var(--color-yellow-1);
+}
+.color-yellow-2 {
+  color: var(--color-yellow-2);
+}
+.color-yellow-3 {
+  color: var(--color-yellow-3);
+}
+.color-yellow-4 {
+  color: var(--color-yellow-4);
+}
+.color-yellow-5 {
+  color: var(--color-yellow-5);
+}
+.color-yellow-6 {
+  color: var(--color-yellow-6);
+}
+.color-yellow-7 {
+  color: var(--color-yellow-7);
+}
+.color-yellow-8 {
+  color: var(--color-yellow-8);
+}
+.color-yellow-9 {
+  color: var(--color-yellow-9);
+}
+.color-yellow-10 {
+  color: var(--color-yellow-10);
+}
+
+/* ------------------------------------- */
+/* Color Lime core individual palette */
+/* ------------------------------------- */
+.color-lime-0 {
+  color: var(--color-lime-0);
+}
+.color-lime-1 {
+  color: var(--color-lime-1);
+}
+.color-lime-2 {
+  color: var(--color-lime-2);
+}
+.color-lime-3 {
+  color: var(--color-lime-3);
+}
+.color-lime-4 {
+  color: var(--color-lime-4);
+}
+.color-lime-5 {
+  color: var(--color-lime-5);
+}
+.color-lime-6 {
+  color: var(--color-lime-6);
+}
+.color-lime-7 {
+  color: var(--color-lime-7);
+}
+.color-lime-8 {
+  color: var(--color-lime-8);
+}
+.color-lime-9 {
+  color: var(--color-lime-9);
+}
+.color-lime-10 {
+  color: var(--color-lime-10);
+}
+
+/* ------------------------------------- */
+/* Color Green core individual palette */
+/* ------------------------------------- */
+.color-green-0 {
+  color: var(--color-green-0);
+}
+.color-green-1 {
+  color: var(--color-green-1);
+}
+.color-green-2 {
+  color: var(--color-green-2);
+}
+.color-green-3 {
+  color: var(--color-green-3);
+}
+.color-green-4 {
+  color: var(--color-green-4);
+}
+.color-green-5 {
+  color: var(--color-green-5);
+}
+.color-green-6 {
+  color: var(--color-green-6);
+}
+.color-green-7 {
+  color: var(--color-green-7);
+}
+.color-green-8 {
+  color: var(--color-green-8);
+}
+.color-green-9 {
+  color: var(--color-green-9);
+}
+.color-green-10 {
+  color: var(--color-green-10);
+}
+
+/* ------------------------------------- */
+/* Color Emerald core individual palette */
+/* ------------------------------------- */
+.color-emerald-0 {
+  color: var(--color-emerald-0);
+}
+.color-emerald-1 {
+  color: var(--color-emerald-1);
+}
+.color-emerald-2 {
+  color: var(--color-emerald-2);
+}
+.color-emerald-3 {
+  color: var(--color-emerald-3);
+}
+.color-emerald-4 {
+  color: var(--color-emerald-4);
+}
+.color-emerald-5 {
+  color: var(--color-emerald-5);
+}
+.color-emerald-6 {
+  color: var(--color-emerald-6);
+}
+.color-emerald-7 {
+  color: var(--color-emerald-7);
+}
+.color-emerald-8 {
+  color: var(--color-emerald-8);
+}
+.color-emerald-9 {
+  color: var(--color-emerald-9);
+}
+.color-emerald-10 {
+  color: var(--color-emerald-10);
+}
+
+/* ------------------------------------- */
+/* Color Teal core individual palette */
+/* ------------------------------------- */
+.color-teal-0 {
+  color: var(--color-teal-0);
+}
+.color-teal-1 {
+  color: var(--color-teal-1);
+}
+.color-teal-2 {
+  color: var(--color-teal-2);
+}
+.color-teal-3 {
+  color: var(--color-teal-3);
+}
+.color-teal-4 {
+  color: var(--color-teal-4);
+}
+.color-teal-5 {
+  color: var(--color-teal-5);
+}
+.color-teal-6 {
+  color: var(--color-teal-6);
+}
+.color-teal-7 {
+  color: var(--color-teal-7);
+}
+.color-teal-8 {
+  color: var(--color-teal-8);
+}
+.color-teal-9 {
+  color: var(--color-teal-9);
+}
+.color-teal-10 {
+  color: var(--color-teal-10);
+}
+
+/* ------------------------------------- */
+/* Color Cyan core individual palette */
+/* ------------------------------------- */
+.color-cyan-0 {
+  color: var(--color-cyan-0);
+}
+.color-cyan-1 {
+  color: var(--color-cyan-1);
+}
+.color-cyan-2 {
+  color: var(--color-cyan-2);
+}
+.color-cyan-3 {
+  color: var(--color-cyan-3);
+}
+.color-cyan-4 {
+  color: var(--color-cyan-4);
+}
+.color-cyan-5 {
+  color: var(--color-cyan-5);
+}
+.color-cyan-6 {
+  color: var(--color-cyan-6);
+}
+.color-cyan-7 {
+  color: var(--color-cyan-7);
+}
+.color-cyan-8 {
+  color: var(--color-cyan-8);
+}
+.color-cyan-9 {
+  color: var(--color-cyan-9);
+}
+.color-cyan-10 {
+  color: var(--color-cyan-10);
+}
+
+/* ------------------------------------- */
+/* Color Sky core individual palette */
+/* ------------------------------------- */
+.color-sky-0 {
+  color: var(--color-sky-0);
+}
+.color-sky-1 {
+  color: var(--color-sky-1);
+}
+.color-sky-2 {
+  color: var(--color-sky-2);
+}
+.color-sky-3 {
+  color: var(--color-sky-3);
+}
+.color-sky-4 {
+  color: var(--color-sky-4);
+}
+.color-sky-5 {
+  color: var(--color-sky-5);
+}
+.color-sky-6 {
+  color: var(--color-sky-6);
+}
+.color-sky-7 {
+  color: var(--color-sky-7);
+}
+.color-sky-8 {
+  color: var(--color-sky-8);
+}
+.color-sky-9 {
+  color: var(--color-sky-9);
+}
+.color-sky-10 {
+  color: var(--color-sky-10);
+}
+
+/* ------------------------------------- */
+/* Color Blue core individual palette */
+/* ------------------------------------- */
+.color-blue-0 {
+  color: var(--color-blue-0);
+}
+.color-blue-1 {
+  color: var(--color-blue-1);
+}
+.color-blue-2 {
+  color: var(--color-blue-2);
+}
+.color-blue-3 {
+  color: var(--color-blue-3);
+}
+.color-blue-4 {
+  color: var(--color-blue-4);
+}
+.color-blue-5 {
+  color: var(--color-blue-5);
+}
+.color-blue-6 {
+  color: var(--color-blue-6);
+}
+.color-blue-7 {
+  color: var(--color-blue-7);
+}
+.color-blue-8 {
+  color: var(--color-blue-8);
+}
+.color-blue-9 {
+  color: var(--color-blue-9);
+}
+.color-blue-10 {
+  color: var(--color-blue-10);
+}
+
+/* ------------------------------------- */
+/* Color Indigo core individual palette */
+/* ------------------------------------- */
+.color-indigo-0 {
+  color: var(--color-indigo-0);
+}
+.color-indigo-1 {
+  color: var(--color-indigo-1);
+}
+.color-indigo-2 {
+  color: var(--color-indigo-2);
+}
+.color-indigo-3 {
+  color: var(--color-indigo-3);
+}
+.color-indigo-4 {
+  color: var(--color-indigo-4);
+}
+.color-indigo-5 {
+  color: var(--color-indigo-5);
+}
+.color-indigo-6 {
+  color: var(--color-indigo-6);
+}
+.color-indigo-7 {
+  color: var(--color-indigo-7);
+}
+.color-indigo-8 {
+  color: var(--color-indigo-8);
+}
+.color-indigo-9 {
+  color: var(--color-indigo-9);
+}
+.color-indigo-10 {
+  color: var(--color-indigo-10);
+}
+
+/* ------------------------------------- */
+/* Color Violet core individual palette */
+/* ------------------------------------- */
+.color-violet-0 {
+  color: var(--color-violet-0);
+}
+.color-violet-1 {
+  color: var(--color-violet-1);
+}
+.color-violet-2 {
+  color: var(--color-violet-2);
+}
+.color-violet-3 {
+  color: var(--color-violet-3);
+}
+.color-violet-4 {
+  color: var(--color-violet-4);
+}
+.color-violet-5 {
+  color: var(--color-violet-5);
+}
+.color-violet-6 {
+  color: var(--color-violet-6);
+}
+.color-violet-7 {
+  color: var(--color-violet-7);
+}
+.color-violet-8 {
+  color: var(--color-violet-8);
+}
+.color-violet-9 {
+  color: var(--color-violet-9);
+}
+.color-violet-10 {
+  color: var(--color-violet-10);
+}
+
+/* ------------------------------------- */
+/* Color Purple core individual palette */
+/* ------------------------------------- */
+.color-purple-0 {
+  color: var(--color-purple-0);
+}
+.color-purple-1 {
+  color: var(--color-purple-1);
+}
+.color-purple-2 {
+  color: var(--color-purple-2);
+}
+.color-purple-3 {
+  color: var(--color-purple-3);
+}
+.color-purple-4 {
+  color: var(--color-purple-4);
+}
+.color-purple-5 {
+  color: var(--color-purple-5);
+}
+.color-purple-6 {
+  color: var(--color-purple-6);
+}
+.color-purple-7 {
+  color: var(--color-purple-7);
+}
+.color-purple-8 {
+  color: var(--color-purple-8);
+}
+.color-purple-9 {
+  color: var(--color-purple-9);
+}
+.color-purple-10 {
+  color: var(--color-purple-10);
+}
+
+/* ------------------------------------- */
+/* Color Fuchsia core individual palette */
+/* ------------------------------------- */
+.color-fuchsia-0 {
+  color: var(--color-fuchsia-0);
+}
+.color-fuchsia-1 {
+  color: var(--color-fuchsia-1);
+}
+.color-fuchsia-2 {
+  color: var(--color-fuchsia-2);
+}
+.color-fuchsia-3 {
+  color: var(--color-fuchsia-3);
+}
+.color-fuchsia-4 {
+  color: var(--color-fuchsia-4);
+}
+.color-fuchsia-5 {
+  color: var(--color-fuchsia-5);
+}
+.color-fuchsia-6 {
+  color: var(--color-fuchsia-6);
+}
+.color-fuchsia-7 {
+  color: var(--color-fuchsia-7);
+}
+.color-fuchsia-8 {
+  color: var(--color-fuchsia-8);
+}
+.color-fuchsia-9 {
+  color: var(--color-fuchsia-9);
+}
+.color-fuchsia-10 {
+  color: var(--color-fuchsia-10);
+}
+
+/* ------------------------------------- */
+/* Color Pink core individual palette */
+/* ------------------------------------- */
+.color-pink-0 {
+  color: var(--color-pink-0);
+}
+.color-pink-1 {
+  color: var(--color-pink-1);
+}
+.color-pink-2 {
+  color: var(--color-pink-2);
+}
+.color-pink-3 {
+  color: var(--color-pink-3);
+}
+.color-pink-4 {
+  color: var(--color-pink-4);
+}
+.color-pink-5 {
+  color: var(--color-pink-5);
+}
+.color-pink-6 {
+  color: var(--color-pink-6);
+}
+.color-pink-7 {
+  color: var(--color-pink-7);
+}
+.color-pink-8 {
+  color: var(--color-pink-8);
+}
+.color-pink-9 {
+  color: var(--color-pink-9);
+}
+.color-pink-10 {
+  color: var(--color-pink-10);
+}
+
+/* ------------------------------------- */
+/* Color Rose core individual palette */
+/* ------------------------------------- */
+.color-rose-0 {
+  color: var(--color-rose-0);
+}
+.color-rose-1 {
+  color: var(--color-rose-1);
+}
+.color-rose-2 {
+  color: var(--color-rose-2);
+}
+.color-rose-3 {
+  color: var(--color-rose-3);
+}
+.color-rose-4 {
+  color: var(--color-rose-4);
+}
+.color-rose-5 {
+  color: var(--color-rose-5);
+}
+.color-rose-6 {
+  color: var(--color-rose-6);
+}
+.color-rose-7 {
+  color: var(--color-rose-7);
+}
+.color-rose-8 {
+  color: var(--color-rose-8);
+}
+.color-rose-9 {
+  color: var(--color-rose-9);
+}
+.color-rose-10 {
+  color: var(--color-rose-10);
+}
+
+/* ------------------------------------- */
+/* Color Slate core individual palette */
+/* ------------------------------------- */
+.color-slate-0 {
+  color: var(--color-slate-0);
+}
+.color-slate-1 {
+  color: var(--color-slate-1);
+}
+.color-slate-2 {
+  color: var(--color-slate-2);
+}
+.color-slate-3 {
+  color: var(--color-slate-3);
+}
+.color-slate-4 {
+  color: var(--color-slate-4);
+}
+.color-slate-5 {
+  color: var(--color-slate-5);
+}
+.color-slate-6 {
+  color: var(--color-slate-6);
+}
+.color-slate-7 {
+  color: var(--color-slate-7);
+}
+.color-slate-8 {
+  color: var(--color-slate-8);
+}
+.color-slate-9 {
+  color: var(--color-slate-9);
+}
+.color-slate-10 {
+  color: var(--color-slate-10);
+}
+
+/* ------------------------------------- */
+/* Color Gray core individual palette */
+/* ------------------------------------- */
+.color-gray-0 {
+  color: var(--color-gray-0);
+}
+.color-gray-1 {
+  color: var(--color-gray-1);
+}
+.color-gray-2 {
+  color: var(--color-gray-2);
+}
+.color-gray-3 {
+  color: var(--color-gray-3);
+}
+.color-gray-4 {
+  color: var(--color-gray-4);
+}
+.color-gray-5 {
+  color: var(--color-gray-5);
+}
+.color-gray-6 {
+  color: var(--color-gray-6);
+}
+.color-gray-7 {
+  color: var(--color-gray-7);
+}
+.color-gray-8 {
+  color: var(--color-gray-8);
+}
+.color-gray-9 {
+  color: var(--color-gray-9);
+}
+.color-gray-10 {
+  color: var(--color-gray-10);
+}
+
+/* ------------------------------------- */
+/* Color zinc core individual palette */
+/* ------------------------------------- */
+.color-zinc-0 {
+  color: var(--color-zinc-0);
+}
+.color-zinc-1 {
+  color: var(--color-zinc-1);
+}
+.color-zinc-2 {
+  color: var(--color-zinc-2);
+}
+.color-zinc-3 {
+  color: var(--color-zinc-3);
+}
+.color-zinc-4 {
+  color: var(--color-zinc-4);
+}
+.color-zinc-5 {
+  color: var(--color-zinc-5);
+}
+.color-zinc-6 {
+  color: var(--color-zinc-6);
+}
+.color-zinc-7 {
+  color: var(--color-zinc-7);
+}
+.color-zinc-8 {
+  color: var(--color-zinc-8);
+}
+.color-zinc-9 {
+  color: var(--color-zinc-9);
+}
+.color-zinc-10 {
+  color: var(--color-zinc-10);
+}
+
+/* ------------------------------------- */
+/* Color Neutral core individual palette */
+/* ------------------------------------- */
+.color-neutral-0 {
+  color: var(--color-neutral-0);
+}
+.color-neutral-1 {
+  color: var(--color-neutral-1);
+}
+.color-neutral-2 {
+  color: var(--color-neutral-2);
+}
+.color-neutral-3 {
+  color: var(--color-neutral-3);
+}
+.color-neutral-4 {
+  color: var(--color-neutral-4);
+}
+.color-neutral-5 {
+  color: var(--color-neutral-5);
+}
+.color-neutral-6 {
+  color: var(--color-neutral-6);
+}
+.color-neutral-7 {
+  color: var(--color-neutral-7);
+}
+.color-neutral-8 {
+  color: var(--color-neutral-8);
+}
+.color-neutral-9 {
+  color: var(--color-neutral-9);
+}
+.color-neutral-10 {
+  color: var(--color-neutral-10);
+}
+
+/* ------------------------------------- */
+/* Color Stone core individual palette */
+/* ------------------------------------- */
+.color-stone-0 {
+  color: var(--color-stone-0);
+}
+.color-stone-1 {
+  color: var(--color-stone-1);
+}
+.color-stone-2 {
+  color: var(--color-stone-2);
+}
+.color-stone-3 {
+  color: var(--color-stone-3);
+}
+.color-stone-4 {
+  color: var(--color-stone-4);
+}
+.color-stone-5 {
+  color: var(--color-stone-5);
+}
+.color-stone-6 {
+  color: var(--color-stone-6);
+}
+.color-stone-7 {
+  color: var(--color-stone-7);
+}
+.color-stone-8 {
+  color: var(--color-stone-8);
+}
+.color-stone-9 {
+  color: var(--color-stone-9);
+}
+.color-stone-10 {
+  color: var(--color-stone-10);
+}
+
+/* ----------------------------------------------------- */
+
+/* ------------------------------------- */
+/* Background-Color White Black core individual palette */
+/* ------------------------------------- */
+.bg-black {
+  background-color: var(--color-black);
+}
+.bg-white {
+  background-color: var(--color-white);
+}
+/* ---------------------  */
+.bg-lyon-orange {
+  background-color: var(--color-lyon-orange);
+}
+.bg-lyon-blue {
+  background-color: var(--color-lyon-blue);
+}
+.bg-lyon-grey {
+  background-color: var(--color-lyon-grey);
+}
+.bg-lyon-lightgrey {
+  background-color: var(--color-lyon-lightgrey);
+}
+.bg-lyon-textorange {
+  background-color: var(--color-lyon-textorange);
+}
+.bg-lyon-lightblack {
+  background-color: var(--color-lyon-lightblack);
+}
+
+/* ------------------------------------- */
+/* Background-Color Red core individual palette */
+/* ------------------------------------- */
+.bg-red-0 {
+  background-color: var(--color-red-0);
+}
+.bg-red-1 {
+  background-color: var(--color-red-1);
+}
+.bg-red-2 {
+  background-color: var(--color-red-2);
+}
+.bg-red-3 {
+  background-color: var(--color-red-3);
+}
+.bg-red-4 {
+  background-color: var(--color-red-4);
+}
+.bg-red-5 {
+  background-color: var(--color-red-5);
+}
+.bg-red-6 {
+  background-color: var(--color-red-6);
+}
+.bg-red-7 {
+  background-color: var(--color-red-7);
+}
+.bg-red-8 {
+  background-color: var(--color-red-8);
+}
+.bg-red-9 {
+  background-color: var(--color-red-9);
+}
+.bg-red-10 {
+  background-color: var(--color-red-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Orange core individual palette */
+/* ------------------------------------- */
+.bg-orange-0 {
+  background-color: var(--color-orange-0);
+}
+.bg-orange-1 {
+  background-color: var(--color-orange-1);
+}
+.bg-orange-2 {
+  background-color: var(--color-orange-2);
+}
+.bg-orange-3 {
+  background-color: var(--color-orange-3);
+}
+.bg-orange-4 {
+  background-color: var(--color-orange-4);
+}
+.bg-orange-5 {
+  background-color: var(--color-orange-5);
+}
+.bg-orange-6 {
+  background-color: var(--color-orange-6);
+}
+.bg-orange-7 {
+  background-color: var(--color-orange-7);
+}
+.bg-orange-8 {
+  background-color: var(--color-orange-8);
+}
+.bg-orange-9 {
+  background-color: var(--color-orange-9);
+}
+.bg-orange-10 {
+  background-color: var(--color-orange-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Amber core individual palette */
+/* ------------------------------------- */
+.bg-amber-0 {
+  background-color: var(--color-amber-0);
+}
+.bg-amber-1 {
+  background-color: var(--color-amber-1);
+}
+.bg-amber-2 {
+  background-color: var(--color-amber-2);
+}
+.bg-amber-3 {
+  background-color: var(--color-amber-3);
+}
+.bg-amber-4 {
+  background-color: var(--color-amber-4);
+}
+.bg-amber-5 {
+  background-color: var(--color-amber-5);
+}
+.bg-amber-6 {
+  background-color: var(--color-amber-6);
+}
+.bg-amber-7 {
+  background-color: var(--color-amber-7);
+}
+.bg-amber-8 {
+  background-color: var(--color-amber-8);
+}
+.bg-amber-9 {
+  background-color: var(--color-amber-9);
+}
+.bg-amber-10 {
+  background-color: var(--color-amber-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Yellow core individual palette */
+/* ------------------------------------- */
+.bg-yellow-0 {
+  background-color: var(--color-yellow-0);
+}
+.bg-yellow-1 {
+  background-color: var(--color-yellow-1);
+}
+.bg-yellow-2 {
+  background-color: var(--color-yellow-2);
+}
+.bg-yellow-3 {
+  background-color: var(--color-yellow-3);
+}
+.bg-yellow-4 {
+  background-color: var(--color-yellow-4);
+}
+.bg-yellow-5 {
+  background-color: var(--color-yellow-5);
+}
+.bg-yellow-6 {
+  background-color: var(--color-yellow-6);
+}
+.bg-yellow-7 {
+  background-color: var(--color-yellow-7);
+}
+.bg-yellow-8 {
+  background-color: var(--color-yellow-8);
+}
+.bg-yellow-9 {
+  background-color: var(--color-yellow-9);
+}
+.bg-yellow-10 {
+  background-color: var(--color-yellow-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Lime core individual palette */
+/* ------------------------------------- */
+.bg-lime-0 {
+  background-color: var(--color-lime-0);
+}
+.bg-lime-1 {
+  background-color: var(--color-lime-1);
+}
+.bg-lime-2 {
+  background-color: var(--color-lime-2);
+}
+.bg-lime-3 {
+  background-color: var(--color-lime-3);
+}
+.bg-lime-4 {
+  background-color: var(--color-lime-4);
+}
+.bg-lime-5 {
+  background-color: var(--color-lime-5);
+}
+.bg-lime-6 {
+  background-color: var(--color-lime-6);
+}
+.bg-lime-7 {
+  background-color: var(--color-lime-7);
+}
+.bg-lime-8 {
+  background-color: var(--color-lime-8);
+}
+.bg-lime-9 {
+  background-color: var(--color-lime-9);
+}
+.bg-lime-10 {
+  background-color: var(--color-lime-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Green core individual palette */
+/* ------------------------------------- */
+.bg-green-0 {
+  background-color: var(--color-green-0);
+}
+.bg-green-1 {
+  background-color: var(--color-green-1);
+}
+.bg-green-2 {
+  background-color: var(--color-green-2);
+}
+.bg-green-3 {
+  background-color: var(--color-green-3);
+}
+.bg-green-4 {
+  background-color: var(--color-green-4);
+}
+.bg-green-5 {
+  background-color: var(--color-green-5);
+}
+.bg-green-6 {
+  background-color: var(--color-green-6);
+}
+.bg-green-7 {
+  background-color: var(--color-green-7);
+}
+.bg-green-8 {
+  background-color: var(--color-green-8);
+}
+.bg-green-9 {
+  background-color: var(--color-green-9);
+}
+.bg-green-10 {
+  background-color: var(--color-green-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Emerald core individual palette */
+/* ------------------------------------- */
+.bg-emerald-0 {
+  background-color: var(--color-emerald-0);
+}
+.bg-emerald-1 {
+  background-color: var(--color-emerald-1);
+}
+.bg-emerald-2 {
+  background-color: var(--color-emerald-2);
+}
+.bg-emerald-3 {
+  background-color: var(--color-emerald-3);
+}
+.bg-emerald-4 {
+  background-color: var(--color-emerald-4);
+}
+.bg-emerald-5 {
+  background-color: var(--color-emerald-5);
+}
+.bg-emerald-6 {
+  background-color: var(--color-emerald-6);
+}
+.bg-emerald-7 {
+  background-color: var(--color-emerald-7);
+}
+.bg-emerald-8 {
+  background-color: var(--color-emerald-8);
+}
+.bg-emerald-9 {
+  background-color: var(--color-emerald-9);
+}
+.bg-emerald-10 {
+  background-color: var(--color-emerald-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Teal core individual palette */
+/* ------------------------------------- */
+.bg-teal-0 {
+  background-color: var(--color-teal-0);
+}
+.bg-teal-1 {
+  background-color: var(--color-teal-1);
+}
+.bg-teal-2 {
+  background-color: var(--color-teal-2);
+}
+.bg-teal-3 {
+  background-color: var(--color-teal-3);
+}
+.bg-teal-4 {
+  background-color: var(--color-teal-4);
+}
+.bg-teal-5 {
+  background-color: var(--color-teal-5);
+}
+.bg-teal-6 {
+  background-color: var(--color-teal-6);
+}
+.bg-teal-7 {
+  background-color: var(--color-teal-7);
+}
+.bg-teal-8 {
+  background-color: var(--color-teal-8);
+}
+.bg-teal-9 {
+  background-color: var(--color-teal-9);
+}
+.bg-teal-10 {
+  background-color: var(--color-teal-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Cyan core individual palette */
+/* ------------------------------------- */
+.bg-cyan-0 {
+  background-color: var(--color-cyan-0);
+}
+.bg-cyan-1 {
+  background-color: var(--color-cyan-1);
+}
+.bg-cyan-2 {
+  background-color: var(--color-cyan-2);
+}
+.bg-cyan-3 {
+  background-color: var(--color-cyan-3);
+}
+.bg-cyan-4 {
+  background-color: var(--color-cyan-4);
+}
+.bg-cyan-5 {
+  background-color: var(--color-cyan-5);
+}
+.bg-cyan-6 {
+  background-color: var(--color-cyan-6);
+}
+.bg-cyan-7 {
+  background-color: var(--color-cyan-7);
+}
+.bg-cyan-8 {
+  background-color: var(--color-cyan-8);
+}
+.bg-cyan-9 {
+  background-color: var(--color-cyan-9);
+}
+.bg-cyan-10 {
+  background-color: var(--color-cyan-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Sky core individual palette */
+/* ------------------------------------- */
+.bg-sky-0 {
+  background-color: var(--color-sky-0);
+}
+.bg-sky-1 {
+  background-color: var(--color-sky-1);
+}
+.bg-sky-2 {
+  background-color: var(--color-sky-2);
+}
+.bg-sky-3 {
+  background-color: var(--color-sky-3);
+}
+.bg-sky-4 {
+  background-color: var(--color-sky-4);
+}
+.bg-sky-5 {
+  background-color: var(--color-sky-5);
+}
+.bg-sky-6 {
+  background-color: var(--color-sky-6);
+}
+.bg-sky-7 {
+  background-color: var(--color-sky-7);
+}
+.bg-sky-8 {
+  background-color: var(--color-sky-8);
+}
+.bg-sky-9 {
+  background-color: var(--color-sky-9);
+}
+.bg-sky-10 {
+  background-color: var(--color-sky-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Blue core individual palette */
+/* ------------------------------------- */
+.bg-blue-0 {
+  background-color: var(--color-blue-0);
+}
+.bg-blue-1 {
+  background-color: var(--color-blue-1);
+}
+.bg-blue-2 {
+  background-color: var(--color-blue-2);
+}
+.bg-blue-3 {
+  background-color: var(--color-blue-3);
+}
+.bg-blue-4 {
+  background-color: var(--color-blue-4);
+}
+.bg-blue-5 {
+  background-color: var(--color-blue-5);
+}
+.bg-blue-6 {
+  background-color: var(--color-blue-6);
+}
+.bg-blue-7 {
+  background-color: var(--color-blue-7);
+}
+.bg-blue-8 {
+  background-color: var(--color-blue-8);
+}
+.bg-blue-9 {
+  background-color: var(--color-blue-9);
+}
+.bg-blue-10 {
+  background-color: var(--color-blue-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Indigo core individual palette */
+/* ------------------------------------- */
+.bg-indigo-0 {
+  background-color: var(--color-indigo-0);
+}
+.bg-indigo-1 {
+  background-color: var(--color-indigo-1);
+}
+.bg-indigo-2 {
+  background-color: var(--color-indigo-2);
+}
+.bg-indigo-3 {
+  background-color: var(--color-indigo-3);
+}
+.bg-indigo-4 {
+  background-color: var(--color-indigo-4);
+}
+.bg-indigo-5 {
+  background-color: var(--color-indigo-5);
+}
+.bg-indigo-6 {
+  background-color: var(--color-indigo-6);
+}
+.bg-indigo-7 {
+  background-color: var(--color-indigo-7);
+}
+.bg-indigo-8 {
+  background-color: var(--color-indigo-8);
+}
+.bg-indigo-9 {
+  background-color: var(--color-indigo-9);
+}
+.bg-indigo-10 {
+  background-color: var(--color-indigo-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Violet core individual palette */
+/* ------------------------------------- */
+.bg-violet-0 {
+  background-color: var(--color-violet-0);
+}
+.bg-violet-1 {
+  background-color: var(--color-violet-1);
+}
+.bg-violet-2 {
+  background-color: var(--color-violet-2);
+}
+.bg-violet-3 {
+  background-color: var(--color-violet-3);
+}
+.bg-violet-4 {
+  background-color: var(--color-violet-4);
+}
+.bg-violet-5 {
+  background-color: var(--color-violet-5);
+}
+.bg-violet-6 {
+  background-color: var(--color-violet-6);
+}
+.bg-violet-7 {
+  background-color: var(--color-violet-7);
+}
+.bg-violet-8 {
+  background-color: var(--color-violet-8);
+}
+.bg-violet-9 {
+  background-color: var(--color-violet-9);
+}
+.bg-violet-10 {
+  background-color: var(--color-violet-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Purple core individual palette */
+/* ------------------------------------- */
+.bg-purple-0 {
+  background-color: var(--color-purple-0);
+}
+.bg-purple-1 {
+  background-color: var(--color-purple-1);
+}
+.bg-purple-2 {
+  background-color: var(--color-purple-2);
+}
+.bg-purple-3 {
+  background-color: var(--color-purple-3);
+}
+.bg-purple-4 {
+  background-color: var(--color-purple-4);
+}
+.bg-purple-5 {
+  background-color: var(--color-purple-5);
+}
+.bg-purple-6 {
+  background-color: var(--color-purple-6);
+}
+.bg-purple-7 {
+  background-color: var(--color-purple-7);
+}
+.bg-purple-8 {
+  background-color: var(--color-purple-8);
+}
+.bg-purple-9 {
+  background-color: var(--color-purple-9);
+}
+.bg-purple-10 {
+  background-color: var(--color-purple-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Fuchsia core individual palette */
+/* ------------------------------------- */
+.bg-fuchsia-0 {
+  background-color: var(--color-fuchsia-0);
+}
+.bg-fuchsia-1 {
+  background-color: var(--color-fuchsia-1);
+}
+.bg-fuchsia-2 {
+  background-color: var(--color-fuchsia-2);
+}
+.bg-fuchsia-3 {
+  background-color: var(--color-fuchsia-3);
+}
+.bg-fuchsia-4 {
+  background-color: var(--color-fuchsia-4);
+}
+.bg-fuchsia-5 {
+  background-color: var(--color-fuchsia-5);
+}
+.bg-fuchsia-6 {
+  background-color: var(--color-fuchsia-6);
+}
+.bg-fuchsia-7 {
+  background-color: var(--color-fuchsia-7);
+}
+.bg-fuchsia-8 {
+  background-color: var(--color-fuchsia-8);
+}
+.bg-fuchsia-9 {
+  background-color: var(--color-fuchsia-9);
+}
+.bg-fuchsia-10 {
+  background-color: var(--color-fuchsia-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Pink core individual palette */
+/* ------------------------------------- */
+.bg-pink-0 {
+  background-color: var(--color-pink-0);
+}
+.bg-pink-1 {
+  background-color: var(--color-pink-1);
+}
+.bg-pink-2 {
+  background-color: var(--color-pink-2);
+}
+.bg-pink-3 {
+  background-color: var(--color-pink-3);
+}
+.bg-pink-4 {
+  background-color: var(--color-pink-4);
+}
+.bg-pink-5 {
+  background-color: var(--color-pink-5);
+}
+.bg-pink-6 {
+  background-color: var(--color-pink-6);
+}
+.bg-pink-7 {
+  background-color: var(--color-pink-7);
+}
+.bg-pink-8 {
+  background-color: var(--color-pink-8);
+}
+.bg-pink-9 {
+  background-color: var(--color-pink-9);
+}
+.bg-pink-10 {
+  background-color: var(--color-pink-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Rose core individual palette */
+/* ------------------------------------- */
+.bg-rose-0 {
+  background-color: var(--color-rose-0);
+}
+.bg-rose-1 {
+  background-color: var(--color-rose-1);
+}
+.bg-rose-2 {
+  background-color: var(--color-rose-2);
+}
+.bg-rose-3 {
+  background-color: var(--color-rose-3);
+}
+.bg-rose-4 {
+  background-color: var(--color-rose-4);
+}
+.bg-rose-5 {
+  background-color: var(--color-rose-5);
+}
+.bg-rose-6 {
+  background-color: var(--color-rose-6);
+}
+.bg-rose-7 {
+  background-color: var(--color-rose-7);
+}
+.bg-rose-8 {
+  background-color: var(--color-rose-8);
+}
+.bg-rose-9 {
+  background-color: var(--color-rose-9);
+}
+.bg-rose-10 {
+  background-color: var(--color-rose-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Slate core individual palette */
+/* ------------------------------------- */
+.bg-slate-0 {
+  background-color: var(--color-slate-0);
+}
+.bg-slate-1 {
+  background-color: var(--color-slate-1);
+}
+.bg-slate-2 {
+  background-color: var(--color-slate-2);
+}
+.bg-slate-3 {
+  background-color: var(--color-slate-3);
+}
+.bg-slate-4 {
+  background-color: var(--color-slate-4);
+}
+.bg-slate-5 {
+  background-color: var(--color-slate-5);
+}
+.bg-slate-6 {
+  background-color: var(--color-slate-6);
+}
+.bg-slate-7 {
+  background-color: var(--color-slate-7);
+}
+.bg-slate-8 {
+  background-color: var(--color-slate-8);
+}
+.bg-slate-9 {
+  background-color: var(--color-slate-9);
+}
+.bg-slate-10 {
+  background-color: var(--color-slate-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Gray core individual palette */
+/* ------------------------------------- */
+.bg-gray-0 {
+  background-color: var(--color-gray-0);
+}
+.bg-gray-1 {
+  background-color: var(--color-gray-1);
+}
+.bg-gray-2 {
+  background-color: var(--color-gray-2);
+}
+.bg-gray-3 {
+  background-color: var(--color-gray-3);
+}
+.bg-gray-4 {
+  background-color: var(--color-gray-4);
+}
+.bg-gray-5 {
+  background-color: var(--color-gray-5);
+}
+.bg-gray-6 {
+  background-color: var(--color-gray-6);
+}
+.bg-gray-7 {
+  background-color: var(--color-gray-7);
+}
+.bg-gray-8 {
+  background-color: var(--color-gray-8);
+}
+.bg-gray-9 {
+  background-color: var(--color-gray-9);
+}
+.bg-gray-10 {
+  background-color: var(--color-gray-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color zinc core individual palette */
+/* ------------------------------------- */
+.bg-zinc-0 {
+  background-color: var(--color-zinc-0);
+}
+.bg-zinc-1 {
+  background-color: var(--color-zinc-1);
+}
+.bg-zinc-2 {
+  background-color: var(--color-zinc-2);
+}
+.bg-zinc-3 {
+  background-color: var(--color-zinc-3);
+}
+.bg-zinc-4 {
+  background-color: var(--color-zinc-4);
+}
+.bg-zinc-5 {
+  background-color: var(--color-zinc-5);
+}
+.bg-zinc-6 {
+  background-color: var(--color-zinc-6);
+}
+.bg-zinc-7 {
+  background-color: var(--color-zinc-7);
+}
+.bg-zinc-8 {
+  background-color: var(--color-zinc-8);
+}
+.bg-zinc-9 {
+  background-color: var(--color-zinc-9);
+}
+.bg-zinc-10 {
+  background-color: var(--color-zinc-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Neutral core individual palette */
+/* ------------------------------------- */
+.bg-neutral-0 {
+  background-color: var(--color-neutral-0);
+}
+.bg-neutral-1 {
+  background-color: var(--color-neutral-1);
+}
+.bg-neutral-2 {
+  background-color: var(--color-neutral-2);
+}
+.bg-neutral-3 {
+  background-color: var(--color-neutral-3);
+}
+.bg-neutral-4 {
+  background-color: var(--color-neutral-4);
+}
+.bg-neutral-5 {
+  background-color: var(--color-neutral-5);
+}
+.bg-neutral-6 {
+  background-color: var(--color-neutral-6);
+}
+.bg-neutral-7 {
+  background-color: var(--color-neutral-7);
+}
+.bg-neutral-8 {
+  background-color: var(--color-neutral-8);
+}
+.bg-neutral-9 {
+  background-color: var(--color-neutral-9);
+}
+.bg-neutral-10 {
+  background-color: var(--color-neutral-10);
+}
+
+/* ------------------------------------- */
+/* Background-Color Stone core individual palette */
+/* ------------------------------------- */
+.bg-stone-0 {
+  background-color: var(--color-stone-0);
+}
+.bg-stone-1 {
+  background-color: var(--color-stone-1);
+}
+.bg-stone-2 {
+  background-color: var(--color-stone-2);
+}
+.bg-stone-3 {
+  background-color: var(--color-stone-3);
+}
+.bg-stone-4 {
+  background-color: var(--color-stone-4);
+}
+.bg-stone-5 {
+  background-color: var(--color-stone-5);
+}
+.bg-stone-6 {
+  background-color: var(--color-stone-6);
+}
+.bg-stone-7 {
+  background-color: var(--color-stone-7);
+}
+.bg-stone-8 {
+  background-color: var(--color-stone-8);
+}
+.bg-stone-9 {
+  background-color: var(--color-stone-9);
+}
+.bg-stone-10 {
+  background-color: var(--color-stone-10);
+}

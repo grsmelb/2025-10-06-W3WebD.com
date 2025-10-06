@@ -1,0 +1,28 @@
+/* --------------------------------------------- 
+    Program         : 1lists.css
+    author          : GRS
+    Date            : Initial: 2025-07-07 13:08:13 IST
+    Purpose         : Sparrow CSS Framework
+                      Create List library
+
+    Details         : Create List library 
+                      
+    To Do           : - Remove style dotted etc
+    
+    Wish            : - All kinds of lists and more
+                   
+    Question        :    
+
+    Understanding   : 
+    Log
+    ------------------------------------------------- 
+    2025-07-07      GRS     Initial Code
+-------------------------------------------------------- */
+
+/* ------------------------------------------------------------ */
+/* List - Preformats
+/* ------------------------------------------------------------ */
+
+.list-remove-bullets {
+    list-style-type: none;
+}

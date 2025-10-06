@@ -1,0 +1,323 @@
+/* --------------------------------------------- 
+    Program         : 1menus.css
+    author          : GRS
+    Date            : Initial: 2025-07-06 14:19:27 IST
+    Purpose         : Sparrow CSS Framework
+                      Create possible menu templates
+
+    Details         : Create 10 menu templates at least and 
+                      
+                    
+    
+    To Do           : - grow it to 100s. 
+                      - make user contribution in future
+    
+    Wish            : - Make menus in one word like "menu-modern-green-medium"
+                   
+    Question        :    
+
+    Understanding   : 
+    Log
+    ------------------------------------------------- 
+    2025-07-06      GRS     Initial Code
+-------------------------------------------------------- */
+
+/* -------------------------- */
+/*  Keeping it to just show classname could be used with 
+    pseudo classes as well use this technique */
+/* -------------------------- */
+.a-hover-color-black:hover {
+  color: var(--color-black);
+}
+/* -------------------------- */
+#xham-menu-list-1 {
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* 
+#xham-menu-container-1 li {
+  height: 0px;
+  transition: all 0.25s ease;
+}
+
+#xham-menu-container-1:hover li {
+  height: 24px;
+} */
+
+ 
+/* 
+.menu-list-1 li {
+  height: 0px;
+  transition: all .25s ease;
+  transition: max-height 1s ease;
+} */
+
+.menu-list-1 {
+  /* height:0px; */
+  display: none;
+  transition: max-height 0.25s ease;
+}
+
+.menu-container-1:hover {
+  cursor: pointer;
+}
+ 
+ .menu-container-1:hover .menu-list-1 { 
+  display: block;
+  /* height: max-content; */
+} 
+/* 
+.menu-container-1:hover li {
+  height: 24px;
+} */
+/* ------------------------------------------------------------ */
+/* Create Menu options - Menu a - Type - Menu-D.Orange, List-Orange  */
+/* ------------------------------------------------------------ */
+
+.menu-a:hover .menu-list-a {
+  display: block;
+}
+
+.menu-list-a a:hover {
+  /* background-color: var(--color-gray-2); */
+  background-color: var(--color-lyon-textorange);
+  /* background-color:var(--color-lyon-orange); */
+
+  color: var(--color-white);
+}
+
+.menu-a:hover .menu-button-a {
+  /* color:var(--color-white); */
+  /* text-decoration: solid overline 2px var(--color-lyon-orange); */
+  background-color: var(--color-lyon-orange);
+  /* background-color: var(--color-lyon-textorange); */
+}
+/* ------------------------ */
+
+/* ------------------------ */
+
+/* ------------------------------------------------------------ */
+/* Create Menu options - Menu a - Type - Menu-Linetop- D.Orange, List-gray  */
+/* ------------------------------------------------------------ */
+.menu-b:hover .menu-list-b {
+  display: block;
+}
+
+.menu-list-b a:hover {
+  background-color: var(--color-gray-2);
+  /* background-color:var(--color-lyon-textorange); */
+  /* background-color:var(--color-lyon-orange); */
+
+  /* color:var(--color-white); */
+}
+
+.menu-b:hover .menu-button-b {
+  /* color:var(--color-white); */
+  text-decoration: solid overline 2px var(--color-lyon-orange);
+  /* background-color: var(--color-lyon-orange); */
+  /* background-color: var(--color-lyon-textorange); */
+}
+/* ------------------------ */
+
+/* ------------------------ */
+
+/* ------------------------------------------------------------ */
+/* Create Menu options - Menu a - Type - Menu-Line-gray, List-gray  */
+/* ------------------------------------------------------------ */
+.menu-c:hover .menu-list-c {
+  display: block;
+}
+
+.menu-list-c a:hover {
+  background-color: var(--color-gray-2);
+  /* background-color:var(--color-lyon-textorange); */
+  /* background-color:var(--color-lyon-orange); */
+
+  /* color:var(--color-white); */
+}
+
+.menu-c:hover .menu-button-c {
+  /* color:var(--color-white); */
+  text-decoration: solid overline 2px var(--color-lyon-orange);
+  text-decoration: solid overline 2px var(--color-lyon-textorange);
+  text-decoration: solid overline 2px var(--color-black);
+
+  /* background-color: var(--color-lyon-orange); */
+  /* background-color: var(--color-lyon-textorange); */
+}
+
+/* ------------------------------------------------------------ */
+/* Create Menu options - Menu-x-1 - Menu-D.Orange LIne, List-Orange bg*/
+/* ------------------------------------------------------------ */
+
+/* ------------------------ */
+.menu-x-1:hover .menu-list-x-1 {
+  display: block;
+}
+
+.menu-list-x-1 a:hover {
+  /* background-color: var(--color-gray-2); */
+  background-color: var(--color-lyon-textorange);
+  /* background-color:var(--color-lyon-orange); */
+
+  color: var(--color-white);
+}
+
+.menu-x-1:hover .menu-button-x-1 {
+  /* color:var(--color-white); */
+  text-decoration: solid overline 2px var(--color-lyon-orange);
+  /* background-color: var(--color-lyon-orange); */
+  /* background-color: var(--color-lyon-textorange); */
+}
+.menu-icon-down-x-1 {
+  /* transition:all .3s ease-in-out; */
+  font-size: 12px;
+  color: var(--color-lyon-orange);
+  transition: 0.3s;
+}
+.menu-x-1:hover .menu-icon-down-x-1 {
+  transform: rotate(180deg);
+}
+
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/* Create Menu options - Menu-x-2 - Menu-D.Orange LIne, List-Orange bg*/
+/* ------------------------------------------------------------ */
+
+/* ------------------------ */
+.menu-x-2:hover .menu-list-x-2 {
+  display: block;
+}
+
+.menu-list-x-2 a:hover {
+  /* background-color: var(--color-gray-2); */
+  background-color: var(--color-lyon-textorange);
+  /* background-color:var(--color-lyon-orange); */
+
+  color: var(--color-white);
+}
+
+.menu-x-2:hover .menu-button-x-2 {
+  /* color:var(--color-white); */
+  text-decoration: solid overline 2px var(--color-lyon-orange);
+  /* background-color: var(--color-lyon-orange); */
+  /* background-color: var(--color-lyon-textorange); */
+}
+.menu-icon-down-x-2 {
+  /* transition:all .3s ease-in-out; */
+  font-size: 12px;
+  color: var(--color-lyon-orange);
+  transition: 0.3s;
+}
+.menu-x-2:hover .menu-icon-down-x-2 {
+  transform: rotate(180deg);
+}
+
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/* Create Menu options - Menu-x-3 - Menu-D.Orange LIne, List-Orange bg*/
+/* ------------------------------------------------------------ */
+
+/* ------------------------ */
+.menu-x-3:hover .menu-list-x-3 {
+  display: block;
+}
+
+.menu-list-x-3 a:hover {
+  /* background-color: var(--color-gray-2); */
+  background-color: var(--color-lyon-textorange);
+  /* background-color:var(--color-lyon-orange); */
+
+  color: var(--color-white);
+}
+
+.menu-x-3:hover .menu-button-x-3 {
+  /* color:var(--color-white); */
+  text-decoration: solid overline 2px var(--color-lyon-orange);
+  /* background-color: var(--color-lyon-orange); */
+  /* background-color: var(--color-lyon-textorange); */
+}
+.menu-icon-down-x-3 {
+  /* transition:all .3s ease-in-out; */
+  font-size: 12px;
+  color: var(--color-lyon-orange);
+  transition: 0.3s;
+}
+.menu-x-3:hover .menu-icon-down-x-3 {
+  transform: rotate(180deg);
+}
+
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/* Create Menu options - Menu-x-4 - Menu-D.Orange LIne, List-Orange bg*/
+/* ------------------------------------------------------------ */
+
+/* ------------------------ */
+.menu-x-4:hover .menu-list-x-4 {
+  display: block;
+}
+
+.menu-list-x-4 a:hover {
+  /* background-color: var(--color-gray-2); */
+  background-color: var(--color-lyon-textorange);
+  /* background-color:var(--color-lyon-orange); */
+
+  color: var(--color-white);
+}
+
+.menu-x-4:hover .menu-button-x-4 {
+  /* color:var(--color-white); */
+  text-decoration: solid overline 2px var(--color-lyon-orange);
+  /* background-color: var(--color-lyon-orange); */
+  /* background-color: var(--color-lyon-textorange); */
+}
+.menu-icon-down-x-4 {
+  /* transition:all .3s ease-in-out; */
+  font-size: 12px;
+  color: var(--color-lyon-orange);
+  transition: 0.3s;
+}
+.menu-x-4:hover .menu-icon-down-x-4 {
+  transform: rotate(180deg);
+}
+
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/* Create Menu options - Menu-x-5 - Menu-D.Orange LIne, List-Orange bg*/
+/* ------------------------------------------------------------ */
+
+/* ------------------------ */
+.menu-x-5:hover .menu-list-x-5 {
+  display: block;
+}
+
+.menu-list-x-5 a:hover {
+  /* background-color: var(--color-gray-2); */
+  background-color: var(--color-lyon-textorange);
+  /* background-color:var(--color-lyon-orange); */
+
+  color: var(--color-white);
+}
+
+.menu-x-5:hover .menu-button-x-5 {
+  /* color:var(--color-white); */
+  text-decoration: solid overline 2px var(--color-lyon-orange);
+  /* background-color: var(--color-lyon-orange); */
+  /* background-color: var(--color-lyon-textorange); */
+}
+.menu-icon-down-x-5 {
+  /* transition:all .3s ease-in-out; */
+  font-size: 12px;
+  color: var(--color-lyon-orange);
+  transition: 0.3s;
+}
+.menu-x-5:hover .menu-icon-down-x-5 {
+  transform: rotate(180deg);
+}
+
+/* ------------------------------------------------------------ */

@@ -1,0 +1,62 @@
+/* <!-- ------------------------------------------- -->
+<!--
+    Program         : main.sparrow.css
+    author          : GRS
+    Date            : Initial: 2025-07-23 13:37:00 IST
+    Purpose         : Sparrow CSS Framework
+                      Main css collection of all css files
+
+    Details         : create at least 10 menu templates so i could use in 
+                      my website and use in the framework components
+                      
+   
+    To Do           : - Make 10s-100s of menu templates
+                      - Simple-link-Menu, Apple-menu, google-menu , medium-menu,
+                        flat-colorful-menu,  
+                      - make it responsive for sm,md,xl,xxl etc like tailwind
+
+    Wish            : - Can in include stylsheet inside a stylesheet like C cpp?
+                      - Make it object oriented or one word magic building of menus
+                      - Make GUI editor to get the code rather than rember so many 
+                        user defined framework keywords like tailwinds
+                   
+    Question        :    
+
+    Understanding   : 
+    Log
+    ------------------------------------------------- 
+    2025-07-06      GRS     Initial Code
+    -------------------------------------------------------              
+    --> */
+
+/* 
+
+/* Main CSS file where other Sparrow frameworks are included
+    Include one file than multiple imports in html
+
+ Important: order of the inclusion is important
+ flex.css,  and grid.css should be coming earlier than menu and others.   
+ Check why? some menu got stuck if the flex was not included earlier than menu codes? 
+
+*/
+
+/* This works?? check it no url required?? */
+@import "";
+
+@import url(../0Cleanup/0cleanup.css);
+@import url(../0Global/1global.css);
+
+@import url(../0Core/1colors.css);
+@import url(../0Core/1sizing.css);
+@import url(../1Layout/1Grid/1flex.css);
+@import url(../1Layout/1Grid/1grid.css);
+
+@import url(../0Core/1position.css);
+@import url(../0Core/1typography.css);
+@import url(../0Elements/1lists.css);
+
+@import url(../1Borders/1border.css);
+@import url(../1Effects/1box-shadow.css);
+@import url(../1Effects/1search-boxes.css);
+
+@import url(../xComponents/1menus.css);

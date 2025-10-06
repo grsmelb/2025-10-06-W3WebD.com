@@ -1,0 +1,539 @@
+/* --------------------------------------------- 
+    Program         : 1typography.css
+    author          : GRS
+    Date            : Initial: 2025-07-06 17:43:17 IST
+    Purpose         : Sparrow CSS Framework
+                      Create typography properties
+
+    Details         : Create typography property modifications
+                      
+    To Do           : - easier naming convention
+    
+    Wish            : - Make more range of all possible values
+                   
+    Question        :    Move these padding and margin to global values?
+
+    Understanding   : 
+    Log
+    ------------------------------------------------- 
+    2025-07-07      GRS     Initial Code
+-------------------------------------------------------- */
+
+.font-monospace{
+    font-family:monospace;
+}
+.font-serif{
+    font-family:serif;
+}
+.font-sansserif{
+    font-family: sans-serif;
+}
+.font-fantasy{
+    font-family:fantasy;
+}
+.font-cursive{
+    font-family:cursive;
+}
+/* ------------------------------------ */
+.t-align-center{
+    text-align: center;
+}
+
+.t-align-start{
+    text-align:start;
+}
+
+.t-align-end{
+    text-align: end;
+}
+
+.t-align-justify{
+    text-align:justify;
+}
+
+.t-align-left{
+    text-align:left;
+}
+
+.t-align-right{
+    text-align: right;
+}
+
+/* ----------------------------------- */
+/*  Font - Size 1-10px 1 increment */
+/* ----------------------------------- */
+.tx-font-1{
+    font-size: 1px;
+}
+.tx-font-2{
+    font-size: 2px;
+}
+.tx-font-3{
+    font-size: 3px;
+}
+.tx-font-4{
+    font-size: 4px;
+}
+.tx-font-5{
+    font-size: 5px;
+}
+.tx-font-6{
+    font-size: 6px;
+}
+.tx-font-7{
+    font-size: 7px;
+}
+.tx-font-8{
+    font-size: 8px;
+}
+.tx-font-9{
+    font-size: 9px;
+}
+.tx-font-10{
+    font-size: 10px;
+}
+
+/* ----------------------------------- */
+/*  Font - Size 11-20px 1 increment */
+/* ----------------------------------- */
+.tx-font-11{
+    font-size: 11px;
+}
+.tx-font-12{
+    font-size: 12px;
+}
+.tx-font-13{
+    font-size: 13px;
+}
+.tx-font-14{
+    font-size: 14px;
+}
+.tx-font-15{
+    font-size: 15px;
+}
+.tx-font-16{
+    font-size: 16px;
+}
+.tx-font-17{
+    font-size: 17px;
+}
+.tx-font-18{
+    font-size: 18px;
+}
+.tx-font-19{
+    font-size: 19px;
+}
+.tx-font-20{
+    font-size: 20px;
+}
+
+/* ----------------------------------- */
+/*  Font - Size 21-30px 1 increment */
+/* ----------------------------------- */
+.tx-font-21{
+    font-size: 21px;
+}
+.tx-font-22{
+    font-size: 22px;
+}
+.tx-font-23{
+    font-size: 23px;
+}
+.tx-font-24{
+    font-size: 24px;
+}
+.tx-font-25{
+    font-size: 25px;
+}
+.tx-font-26{
+    font-size: 26px;
+}
+.tx-font-27{
+    font-size: 27px;
+}
+.tx-font-28{
+    font-size: 28px;
+}
+.tx-font-29{
+    font-size: 29px;
+}
+.tx-font-30{
+    font-size: 30px;
+}
+
+/* ----------------------------------- */
+/*  Font - Size 31-40px 1 increment */
+/* ----------------------------------- */
+.tx-font-31{
+    font-size: 31px;
+}
+.tx-font-32{
+    font-size: 32px;
+}
+.tx-font-33{
+    font-size: 33px;
+}
+.tx-font-34{
+    font-size: 34px;
+}
+.tx-font-35{
+    font-size: 35px;
+}
+.tx-font-36{
+    font-size: 36px;
+}
+.tx-font-37{
+    font-size: 37px;
+}
+.tx-font-38{
+    font-size: 38px;
+}
+.tx-font-39{
+    font-size: 39px;
+}
+.tx-font-40{
+    font-size: 40px;
+}
+
+/* ----------------------------------- */
+/*  Font - Size 41-50px 1 increment */
+/* ----------------------------------- */
+.tx-font-41{
+    font-size: 41px;
+}
+.tx-font-42{
+    font-size: 42px;
+}
+.tx-font-43{
+    font-size: 43px;
+}
+.tx-font-44{
+    font-size: 44px;
+}
+.tx-font-45{
+    font-size: 45px;
+}
+.tx-font-46{
+    font-size: 46px;
+}
+.tx-font-47{
+    font-size: 47px;
+}
+.tx-font-48{
+    font-size: 48px;
+}
+.tx-font-49{
+    font-size: 49px;
+}
+.tx-font-50{
+    font-size: 50px;
+}
+
+/* ----------------------------------- */
+/*  Font - Size 51-60px 1 increment */
+/* ----------------------------------- */
+.tx-font-51{
+    font-size: 51px;
+}
+.tx-font-52{
+    font-size: 52px;
+}
+.tx-font-53{
+    font-size: 53px;
+}
+.tx-font-54{
+    font-size: 54px;
+}
+.tx-font-55{
+    font-size: 55px;
+}
+.tx-font-56{
+    font-size: 56px;
+}
+.tx-font-57{
+    font-size: 57px;
+}
+.tx-font-58{
+    font-size: 58px;
+}
+.tx-font-59{
+    font-size: 59px;
+}
+.tx-font-60{
+    font-size: 60px;
+}
+
+/* ----------------------------------- */
+/*  Font - Size 61-70px 1 increment */
+/* ----------------------------------- */
+.tx-font-61{
+    font-size: 61px;
+}
+.tx-font-62{
+    font-size: 62px;
+}
+.tx-font-63{
+    font-size: 63px;
+}
+.tx-font-64{
+    font-size: 64px;
+}
+.tx-font-65{
+    font-size: 65px;
+}
+.tx-font-66{
+    font-size: 66px;
+}
+.tx-font-67{
+    font-size: 67px;
+}
+.tx-font-68{
+    font-size: 68px;
+}
+.tx-font-69{
+    font-size: 69px;
+}
+.tx-font-70{
+    font-size: 70px;
+}
+
+
+/* ----------------------------------- */
+/*  Font - Size 71-80px 1 increment */
+/* ----------------------------------- */
+.tx-font-71{
+    font-size: 71px;
+}
+.tx-font-72{
+    font-size: 72px;
+}
+.tx-font-73{
+    font-size: 73px;
+}
+.tx-font-74{
+    font-size: 74px;
+}
+.tx-font-75{
+    font-size: 75px;
+}
+.tx-font-76{
+    font-size: 76px;
+}
+.tx-font-77{
+    font-size: 77px;
+}
+.tx-font-78{
+    font-size: 78px;
+}
+.tx-font-79{
+    font-size: 79px;
+}
+.tx-font-80{
+    font-size: 80px;
+}
+
+/* ----------------------------------- */
+/*  Font - Size 81-90px 1 increment */
+/* ----------------------------------- */
+.tx-font-81{
+    font-size: 81px;
+}
+.tx-font-82{
+    font-size: 82px;
+}
+.tx-font-83{
+    font-size: 83px;
+}
+.tx-font-84{
+    font-size: 84px;
+}
+.tx-font-85{
+    font-size: 85px;
+}
+.tx-font-86{
+    font-size: 86px;
+}
+.tx-font-87{
+    font-size: 87px;
+}
+.tx-font-88{
+    font-size: 88px;
+}
+.tx-font-89{
+    font-size: 89px;
+}
+.tx-font-90{
+    font-size: 90px;
+}
+
+/* ----------------------------------- */
+/*  Font - Size 91-100px 1 increment */
+/* ----------------------------------- */
+.tx-font-91{
+    font-size: 91px;
+}
+.tx-font-92{
+    font-size: 92px;
+}
+.tx-font-93{
+    font-size: 93px;
+}
+.tx-font-94{
+    font-size: 94px;
+}
+.tx-font-95{
+    font-size: 95px;
+}
+.tx-font-96{
+    font-size: 96px;
+}
+.tx-font-97{
+    font-size: 97px;
+}
+.tx-font-98{
+    font-size: 98px;
+}
+.tx-font-99{
+    font-size: 99px;
+}
+.tx-font-100{
+    font-size: 100px;
+}
+
+/* 
+    Text font weight: 100-1000
+*/
+.font-weight-100{
+    font-weight: 100;
+}
+.font-weight-200{
+    font-weight: 200;
+}
+.font-weight-300{
+    font-weight: 300;
+}
+.font-weight-400{
+    font-weight: 400;
+}
+.font-weight-500{
+    font-weight: 500;
+}
+.font-weight-600{
+    font-weight: 600;
+}
+.font-weight-700{
+    font-weight: 700;
+}
+.font-weight-800{
+    font-weight: 800;
+}
+.font-weight-900{
+    font-weight: 900;
+}
+
+/* 
+    Text Decoration - Types
+ */
+
+ .underline{
+    text-decoration: solid underline 1px black;
+ }
+ .underline-orange{
+    text-decoration: solid underline 1px var(--color-lyon-orange);
+ }
+ 
+ /* 
+        Text - Line spacing
+ */
+
+ .line-height-1{
+    line-height: 1;
+ }
+
+
+ .line-height-1_05{
+    line-height: 1.05;
+ }
+
+ .line-height-1_10{
+    line-height: 1.10;
+ }
+ 
+
+ .line-height-1_15{
+    line-height: 1.15;
+ }
+
+.line-height-1_20{
+    line-height: 1.20;
+ }
+
+ .line-height-1_25{
+    line-height: 1.25;
+ }
+
+ .line-height-1_30{
+    line-height: 1.30;
+ }
+
+
+.line-height-1_35{
+    line-height: 1.35;
+ }
+
+.line-height-1_40{
+    line-height: 1.40;
+ }
+
+ .line-height-1_45{
+    line-height: 1.45;
+ }
+
+ .line-height-1_50{
+    line-height: 1.50;
+ }
+
+ .line-height-1_55{
+    line-height: 1.55;
+ }
+
+ .line-height-1_60{
+    line-height: 1.60;
+ }
+
+ .line-height-1_65{
+    line-height: 1.65;
+ }
+
+ .line-height-1_70{
+    line-height: 1.70;
+ }
+
+ .line-height-1_75{
+    line-height: 1.75;
+ }
+
+ .line-height-1_80{
+    line-height: 1.80;
+ }
+
+ .line-height-1_85{
+    line-height: 1.85;
+ }
+
+ .line-height-1_90{
+    line-height: 1.90;
+ }
+
+ .line-height-1_95{
+    line-height: 1.95;
+ }
+
+ .line-height-2{
+    line-height: 2;
+ }
+
+ 
+
+ 
+ 

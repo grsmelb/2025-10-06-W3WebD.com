@@ -1,0 +1,341 @@
+/* --------------------------------------------- 
+    Program         : 1Box-shadow.css
+    author          : GRS
+    Date            : Initial: 2025-07-08 13:47:30 IST
+    Purpose         : Sparrow CSS Framework
+                      Create typography properties
+
+    Details         : Create typography property modifications
+                      
+    To Do           : - easier naming convention
+    
+    Wish            : - Make more range of all possible values
+                   
+    Question        :    Move these padding and margin to global values?
+
+    Understanding   :  will create some left right straight 
+    Log
+    ------------------------------------------------- 
+    2025-07-07      GRS     Initial Code
+-------------------------------------------------------- */
+
+/* ------------------------------ */
+/* Shadow bottom glow -  */
+/* ------------------------------ */
+.shadow-gl-y-g {
+  /* box-shadow: 0 0 15px 0 #0000002e !important; */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+
+  /* border-top: 1px solid lightgray; */
+}
+
+.shadow-gl-y-gfg {
+  background: #f9f9f9 !important;
+  border-top: 4px solid #308d46 !important;
+  box-shadow: 0 0 15px 0 #0000002e !important;
+}
+
+.shadow-gl-y-xham {
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Change Tailwind */
+.shadow-gl-y-google {
+  /* box-shadow: 0 0 15px 0 #0000002e!important; */
+  box-shadow: 0 0 14px 0 #0000002e !important;
+}
+
+.shadow-gl-y-1 {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+.shadow-gl-y-2 {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  /* box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); */
+}
+
+.shadow-gl-y-3 {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.shadow-gl-y-4 {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+.shadow-gl-y-5 {
+  /* --tw-shadow-color: transparent;  */
+  /* find color transparent one */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.shadow-gl-y-6 {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.shadow-gl-y-7 {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+/* ------------------------------ */
+/* Shadow bottom -  */
+/* ------------------------------ */
+
+.shadow-y-1 {
+  box-shadow: 0px 1px 1px 1px lightgray;
+}
+
+.shadow-y-2 {
+  box-shadow: 0px 2px 1px 1px lightgray;
+}
+
+.shadow-y-3 {
+  box-shadow: 0px 3px 1px 1px lightgray;
+}
+
+.shadow-y-4 {
+  box-shadow: 0px 4px 1px 1px lightgray;
+}
+
+.shadow-y-5 {
+  box-shadow: 0px 5px 1px 1px lightgray;
+}
+
+.shadow-y-6 {
+  box-shadow: 0px 6px 1px 1px lightgray;
+}
+
+.shadow-y-7 {
+  box-shadow: 0px 7px 1px 1px lightgray;
+}
+
+.shadow-y-8 {
+  box-shadow: 0px 8px 1px 1px lightgray;
+}
+
+.shadow-y-9 {
+  box-shadow: 0px 9px 1px 1px lightgray;
+}
+
+.shadow-y-10 {
+  box-shadow: 0px 10px 1px 1px lightgray;
+}
+
+/* ------------------------------ */
+/* Shadow Top -  */
+/* ------------------------------ */
+
+.shadow-x-1 {
+  box-shadow: 1px 0px 1px 1px lightgray;
+}
+
+.shadow-x-2 {
+  box-shadow: 2px 0px 1px 1px lightgray;
+}
+
+.shadow-x-3 {
+  box-shadow: 3px 0px 1px 1px lightgray;
+}
+
+.shadow-x-4 {
+  box-shadow: 4px 0px 1px 1px lightgray;
+}
+
+.shadow-x-5 {
+  box-shadow: 5px 0px 1px 1px lightgray;
+}
+
+.shadow-x-6 {
+  box-shadow: 6px 0px 1px 1px lightgray;
+}
+
+.shadow-x-7 {
+  box-shadow: 7px 0px 1px 1px lightgray;
+}
+
+.shadow-x-8 {
+  box-shadow: 8px 0px 1px 1px lightgray;
+}
+
+.shadow-x-9 {
+  box-shadow: 9px 0px 1px 1px lightgray;
+}
+
+.shadow-x-10 {
+  box-shadow: 10px 0px 1px 1px lightgray;
+}
+
+/* ------------------------------ */
+/* Shadow bottom -  */
+/* ------------------------------ */
+
+.shadow-yr-1 {
+  box-shadow: 0px -1px 1px 1px lightgray;
+}
+
+.shadow-yr-2 {
+  box-shadow: 0px -2px 1px 1px lightgray;
+}
+
+.shadow-yr-3 {
+  box-shadow: 0px -3px 1px 1px lightgray;
+}
+
+.shadow-yr-4 {
+  box-shadow: 0px -4px 1px 1px lightgray;
+}
+
+.shadow-yr-5 {
+  box-shadow: 0px -5px 1px 1px lightgray;
+}
+
+.shadow-yr-6 {
+  box-shadow: 0px -6px 1px 1px lightgray;
+}
+
+.shadow-yr-7 {
+  box-shadow: 0px -7px 1px 1px lightgray;
+}
+
+.shadow-yr-8 {
+  box-shadow: 0px -8px 1px 1px lightgray;
+}
+
+.shadow-yr-9 {
+  box-shadow: 0px -9px 1px 1px lightgray;
+}
+
+.shadow-yr-10 {
+  box-shadow: 0px -10px 1px 1px lightgray;
+}
+
+/* ------------------------------ */
+/* Shadow Top -  */
+/* ------------------------------ */
+
+.shadow-xr-1 {
+  box-shadow: -1px 0px 1px 1px lightgray;
+}
+
+.shadow-xr-2 {
+  box-shadow: -2px 0px 1px 1px lightgray;
+}
+
+.shadow-xr-3 {
+  box-shadow: -3px 0px 1px 1px lightgray;
+}
+
+.shadow-xr-4 {
+  box-shadow: -4px 0px 1px 1px lightgray;
+}
+
+.shadow-xr-5 {
+  box-shadow: -5px 0px 1px 1px lightgray;
+}
+
+.shadow-xr-6 {
+  box-shadow: -6px 0px 1px 1px lightgray;
+}
+
+.shadow-xr-7 {
+  box-shadow: -7px 0px 1px 1px lightgray;
+}
+
+.shadow-xr-8 {
+  box-shadow: -8px 0px 1px 1px lightgray;
+}
+
+.shadow-xr-9 {
+  box-shadow: -9px 0px 1px 1px lightgray;
+}
+
+.shadow-xr-10 {
+  box-shadow: -10px 0px 1px 1px lightgray;
+}
+
+/* ------------------------------ */
+/* Shadow Top -  */
+/* ------------------------------ */
+
+.shadow-xy-1 {
+  box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.shadow-xy-2 {
+  box-shadow: 2px 2px 1px 1px lightgray;
+}
+
+.shadow-xy-3 {
+  box-shadow: 3px 3px 1px 1px lightgray;
+}
+
+.shadow-xy-4 {
+  box-shadow: 4px 4px 1px 1px lightgray;
+}
+
+.shadow-xy-5 {
+  box-shadow: 5px 5px 1px 1px lightgray;
+}
+
+.shadow-xy-6 {
+  box-shadow: 6px 6px 1px 1px lightgray;
+}
+
+.shadow-xy-7 {
+  box-shadow: 7px 7px 1px 1px lightgray;
+}
+
+.shadow-xy-8 {
+  box-shadow: 8px 8px 1px 1px lightgray;
+}
+
+.shadow-xy-9 {
+  box-shadow: 9px 9px 1px 1px lightgray;
+}
+
+.shadow-xy-10 {
+  box-shadow: 10px 10px 1px 1px lightgray;
+}
+
+/* ------------------------------ */
+/* Shadow YX   */
+/* ------------------------------ */
+
+.shadow-yx-1 {
+  box-shadow: -1px -1px 1px 1px lightgray;
+}
+
+.shadow-yx-2 {
+  box-shadow: -2px -2px 1px 1px lightgray;
+}
+
+.shadow-yx-3 {
+  box-shadow: -3px -3px 1px 1px lightgray;
+}
+
+.shadow-yx-4 {
+  box-shadow: -4px -4px 1px 1px lightgray;
+}
+
+.shadow-yx-5 {
+  box-shadow: -5px -5px 1px 1px lightgray;
+}
+
+.shadow-yx-6 {
+  box-shadow: -6px -6px 1px 1px lightgray;
+}
+
+.shadow-yx-7 {
+  box-shadow: -7px -7px 1px 1px lightgray;
+}
+
+.shadow-yx-8 {
+  box-shadow: -8px -8px 1px 1px lightgray;
+}
+
+.shadow-yx-9 {
+  box-shadow: -9px -9px 1px 1px lightgray;
+}
+
+.shadow-yx-10 {
+  box-shadow: -10px -10px 1px 1px lightgray;
+}
