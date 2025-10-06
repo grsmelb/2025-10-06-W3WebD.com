@@ -1,0 +1,21 @@
+//@import './variables.scss';
+/* My First SCSS */
+
+@use 'variables';
+// @use '_variables.scss';
+
+
+$myvar : 12px;
+
+p{
+    font: {
+        size: $myvar;
+    }
+    &:hover{
+        font:{
+            weight: variables.$bold;
+        }
+    }
+}
+
+

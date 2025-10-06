@@ -1,0 +1,9 @@
+/* My First SCSS */
+p {
+  font-size: 12px;
+}
+p:hover {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map */
