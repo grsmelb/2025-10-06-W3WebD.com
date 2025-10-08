@@ -1,0 +1,30 @@
+.web-chat {
+    overflow: hidden;
+}
+
+.connect-spinner {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.connect-spinner>.content {
+    margin: auto;
+}
+
+.connect-spinner>.content>.icon {
+    font-size: 64px;
+}
+
+.webchat__bubble__content>.markdown>p>a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+div[role=group]:not(.webchat__stacked_extra_left_indent) {
+    margin-left: 21px;
+}
+
+div[role=group]:not(.webchat__stacked_extra_right_indent) {
+    margin-right: 21px;
+}
