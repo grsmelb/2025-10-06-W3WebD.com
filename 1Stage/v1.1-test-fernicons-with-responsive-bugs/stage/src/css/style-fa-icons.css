@@ -1,0 +1,168 @@
+/* Import Fonts for the website  */
+@import './variables-fa-icons.css';
+@import './components-fa-icons.css';
+@import './app-icons.css';
+
+/* General Elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Not working forcing
+    Only device preference id accepted
+    Not able to get default dark theme of browsers
+*/
+:root {
+    color-scheme: dark light;
+}
+
+body {
+    font-size: var(--app-font-size);
+    font-family: var(--para-font-family);
+    background-color: var(--body-bg-color);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-x: auto;
+}
+
+h1 {
+    font-family: var(--h1-font-family);
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-font-weight);
+    line-height: var(--h1-line-height);
+    letter-spacing: var(--h1-letter-spacing);
+    color: var(--h1-color);
+}
+
+.display-none {
+    display: none;
+}
+
+.icon-detail-html-content {
+    display: flex;
+
+    overflow: auto;
+}
+
+/* 
+main p {
+    font-family: var(--para-font-family);
+    font-weight: var(--para-font-weight);
+    font-size: var(--para-font-size);
+    line-height: var(--para-line-height);
+    word-break: var(--para-word-break);
+    color: var(--para-color);
+    margin: var(--para-margin);
+    text-align: var(--para-text-align);
+     word-spacing: var(--primary-text-word-spacing);  
+
+} */
+
+/* Program related Classes */
+.container {
+    /* margin: var(--container-margins); */
+    padding: var(--container-padding);
+}
+
+.container-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.contents-stretch {
+    height: 100%;
+    width: 100%;
+}
+
+.container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--container-center-gap);
+    flex-wrap: wrap;
+
+    /* flex-direction: row; */
+    /* margin: auto; */
+    /* width: 100vw; */
+    /* background-color: blue; */
+
+}
+
+.container-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: var(--container-evenly-gap);
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* margin: auto; */
+    /* width: 100vw; */
+    /* background-color: blue; */
+
+}
+
+.container-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 1rem; */
+    gap: var(--container-around-gap);
+    /* flex-wrap: wrap; */
+}
+
+.container-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 1rem; */
+    gap: var(--container-around-gap);
+    /* flex-wrap: wrap; */
+}
+
+.container-start {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* gap: 1rem; */
+    gap: var(--container-around-gap);
+    /* flex-wrap: wrap; */
+}
+
+.container-end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* gap: 1rem; */
+    gap: var(--container-around-gap);
+    /* flex-wrap: wrap; */
+}
+
+/* This is for Adsgoogle. Put it later */
+/* .main{
+    display: grid;
+    grid-template-columns: var(--main-ad-ratio);
+} */
+.aside {
+    /* position:fixed;*/
+    /* position: sticky;
+    top: 20px;
+    right: 1rem;
+    width: 15vw;
+    height: 80vh;
+    z-index: 999;
+    margin: 75px 0 0 0; */
+    margin: 75px 0 2rem 0;
+    /* Test */
+    border: solid 1px #eee;
+}
+
+.screen-height {
+    height: 100vh;
+}
