@@ -37,3 +37,23 @@
 } */
 }
 
+@media (max-width:1200px){
+    .hero-section {
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+}
+
+@media(max-width: 780px){
+.hero-section {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media(max-width:510px){
+ .hero-section {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+}
