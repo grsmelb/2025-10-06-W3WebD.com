@@ -475,15 +475,19 @@ import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.mjs";
     }
 
     async function showTotalCount() {
+
+      let countContainer = document.createElement("div");
+      countContainer.classList.add('count-container');
       let countDiv = document.createElement("div");
       countDiv.id = "total-count";
       countDiv.classList.add("total-count");
       let count = document.createElement("h3");
       count.innerText = iconsAllArray.length.toLocaleString("en-US") + " Icons";
       countDiv.appendChild(count);
+      countContainer.appendChild(countDiv);
       searchResultContainer.insertAdjacentHTML(
         "afterbegin",
-        countDiv.outerHTML
+        countContainer.outerHTML
       );
     }
 
