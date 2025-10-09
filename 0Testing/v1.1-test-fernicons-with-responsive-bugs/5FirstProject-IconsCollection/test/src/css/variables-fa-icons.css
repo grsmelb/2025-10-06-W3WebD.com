@@ -131,6 +131,8 @@
   --bttn-blk-highlight-bg-color: white;
   --bttn-blk-highlight-text-color: var(--apple-text-color);
 
+  --bttn-more-margin: 0.5rem;
+
   --bttn-shadow: 0 0 3px 0 blue;
   --bttn-shadow: 0 0 3px 0;
   --bttn-shadow: 0 0 2px 3px;
@@ -205,11 +207,11 @@
 
   /* Text Heading fonts */
   --h1-font-family: 'Averia Serif Libre', cursive;
-  --h1-font-family: Jost,'Inter', 'Archivo', sans-serif;
+  --h1-font-family: Jost, 'Inter', 'Archivo', sans-serif;
   /* Text Para Fonts */
   --para-font-family: 'Archivo', sans-serif;
   --para-font-family: 'Inter', 'Archivo', sans-serif;
-  --para-font-family: Jost,'Inter', 'Archivo', sans-serif;
+  --para-font-family: Jost, 'Inter', 'Archivo', sans-serif;
   /* ------------------------------------ */
 
 

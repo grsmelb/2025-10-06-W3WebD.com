@@ -248,7 +248,7 @@ import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.mjs";
                             ${post.classname} 
                         </p>
                         <p class="search-tips-subheading more-info">Click for More Info</p>
-                    </div> '
+                    </div> 
                 </aside>
             </div>
         </article>
@@ -494,7 +494,7 @@ import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.mjs";
     }
 
     function openDetailedModalWindow(ev) {
-      if(test) console.log('Event Detail current target:  ',ev.currentTarget)
+      if (test) console.log('Event Detail current target:  ', ev.currentTarget)
 
       let iconclass = ev.currentTarget.dataset.iconclass;
       let groupname = ev.currentTarget.dataset.icongroup;

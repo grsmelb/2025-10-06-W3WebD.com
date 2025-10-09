@@ -58,6 +58,9 @@ header a:hover {
 }
 
 
+.bttn-more{
+    margin:var(--bttn-more-margin);
+}
 /* h3{
     color: var(--tertiary-color);
 } */
