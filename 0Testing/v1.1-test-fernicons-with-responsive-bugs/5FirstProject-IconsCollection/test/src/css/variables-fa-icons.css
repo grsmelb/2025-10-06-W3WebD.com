@@ -414,6 +414,9 @@
   --modal-close-position: absolute;
   --modal-close-top: -0.5rem;
   --modal-close-right: -0.5rem;
+  --modal-close-top: 0rem;
+  --modal-close-right: 0rem;
+
 
   --modal-close-bg-color: #333;
   --modal-close-border-radius: 50%;

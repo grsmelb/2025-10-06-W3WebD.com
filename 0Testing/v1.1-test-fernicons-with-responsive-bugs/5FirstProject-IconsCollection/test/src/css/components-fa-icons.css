@@ -649,7 +649,9 @@ header {
     height:100%;
     width:100%;
 } */
-
+/* .modal-detail {
+    overflow: auto;
+} */
 .modal-article {
     /* display:none; */
     /* display: block; */
@@ -668,7 +670,7 @@ header {
     border-radius: var(--modal-radius);
     z-index: var(--modal-z-index);
     /* margin: auto; */
-    overflow: auto;
+    /* overflow: auto; */
     /* Not orking - animation or transition */
     /* animation-duration: .001s;
     animation-timing-function: step-end;
@@ -680,7 +682,9 @@ header {
 
 }
 
-
+.modal-detail-container{
+    overflow:auto;
+}
 
 .modal-close-button {
     display: flex;
@@ -690,7 +694,7 @@ header {
     right: var(--modal-close-right);
     top: var(--modal-close-top);
     border: none;
-    border-radius: var(--modal-close-border-radius);
+    /* border-radius: var(--modal-close-border-radius); */
     background-color: var(--modal-close-bg-color);
     height: var(--modal-close-height);
     width: var(--modal-close-width);
@@ -725,6 +729,8 @@ header {
 
     background-color: var(--modal-close-x-highlight-color);
 }
+
+
 
 .modal-details-tabs {
     height: var(--modal-details-tabs-height);
