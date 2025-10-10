@@ -14,7 +14,14 @@
         --result-icon-container-bg-color: #555;
         --result-icon-container-bg-color: #000;
         --result-icon-container-bg-color: #444;
-    }
+        --search-result-div-bg-color:#333;
+        /* --search-result-div-bg-color: #1d1d1f; */
+        --modal-close-x-color: #eee;
+        --modal-bg-color: #eee;
+        --modal-close-bg-color:#333;
+    
+    
+    }   
 
     body,
     .nav,
@@ -25,6 +32,19 @@
         color: var(--text-color);
     }
 
+    #search-input {
+        background-color: #aaa;
+    }
+    #search-input::placeholder{
+        color: #ddd;
+    }
+    #search-library-heading {
+        color: #ddd;
+    }
+
+    .modal-article{
+        border: solid 1px #fff;
+    }
     /* Element colors doesnt work
         Class works. Weird. WHy? same element selected 
         using both nav and .nav */
@@ -78,9 +98,10 @@
         text-wrap: wrap;
     }
 
+    /* 
     .modal-detail-container {
         flex-direction: column;
-    }
+    } */
 }
 
 @media(max-width: 780px) {
