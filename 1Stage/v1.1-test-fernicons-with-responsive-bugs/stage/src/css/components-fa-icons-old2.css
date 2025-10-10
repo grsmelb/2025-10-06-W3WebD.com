@@ -1107,5 +1107,4 @@ header {
 .icon-code-container {
     overflow: scroll;
     max-width: 28rem;
-    text-wrap:auto;
 }

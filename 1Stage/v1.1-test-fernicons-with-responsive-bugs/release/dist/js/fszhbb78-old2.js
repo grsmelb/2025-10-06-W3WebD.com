@@ -53,7 +53,7 @@ import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.mjs";
     // let allIconsFile = phIconsFile;
     // let allIconsFile = "./data/icon-groups/all-icons";
     // let allIconsFile = "./data/icon-groups/allicn";
-    let allIconsFile = "./src/data/icon-groups/all-icons.json";
+    let allIconsFile = "./dist/data/icon-groups/hhgtrd.json";
 
     let libraryName = "font-awesome";
     let faIconName = "font-awesome";

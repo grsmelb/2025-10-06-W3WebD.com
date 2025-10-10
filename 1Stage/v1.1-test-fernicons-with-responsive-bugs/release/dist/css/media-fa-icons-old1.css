@@ -14,13 +14,6 @@
         --result-icon-container-bg-color: #555;
         --result-icon-container-bg-color: #000;
         --result-icon-container-bg-color: #444;
-        --search-result-div-bg-color: #333;
-        /* --search-result-div-bg-color: #1d1d1f; */
-        --modal-close-x-color: #eee;
-        --modal-bg-color: #eee;
-        --modal-close-bg-color: #333;
-
-
     }
 
     body,
@@ -30,22 +23,6 @@
         background-color: var(--body-bg-color);
         color: #eee;
         color: var(--text-color);
-    }
-
-    #search-input {
-        background-color: #aaa;
-    }
-
-    #search-input::placeholder {
-        color: #ddd;
-    }
-
-    #search-library-heading {
-        color: #ddd;
-    }
-
-    .modal-article {
-        border: solid 1px #fff;
     }
 
     /* Element colors doesnt work
@@ -100,45 +77,10 @@
         /* color: blue; */
         text-wrap: wrap;
     }
-
-
+/* 
     .modal-detail-container {
         flex-direction: column;
-        gap: 1rem;
-    }
-
-    .modal-details-tabs {
-        width: 100%;
-    }
-
-    .modal-details-images {
-        width: 100%
-    }
-
-    .code-div .icon-code-container {
-        /* height: 10rem; */
-        text-wrap: auto;
-        width: 100%;
-        /* overflow-x:auto; */
-    }
-
-    .code-div pre {
-        width: 60%;
-        /* background-color:yellow; */
-        margin-block: 0 0;
-        /* overflow-x : auto; */
-    }
-
-    .code-div {
-        /* background-color:blue; */
-        /* overflow-x:auto; */
-        width: 100%;
-    }
-
-    /* .code-div pre {
-               width:100px; 
-              width: 50%;
-          } */
+    } */
 }
 
 @media(max-width: 780px) {

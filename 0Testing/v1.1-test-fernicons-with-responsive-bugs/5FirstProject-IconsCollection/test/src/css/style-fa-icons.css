@@ -24,7 +24,12 @@ body {
     background-color: var(--body-bg-color);
     scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow-x: auto;
+    /* overflow-x: auto; */
+
+    /* scrollbar-gutter: stable && both-edges; */
+    scrollbar-gutter: stable;
+    /* Reserves space on both sides for consistent layout */
+
 }
 
 h1 {

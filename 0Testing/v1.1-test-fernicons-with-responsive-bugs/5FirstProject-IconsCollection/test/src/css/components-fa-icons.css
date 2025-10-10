@@ -669,6 +669,7 @@ header {
     border: var(--modalborder);
     border-radius: var(--modal-radius);
     z-index: var(--modal-z-index);
+    overflow: auto;
     /* margin: auto; */
     /* overflow: auto; */
     /* Not orking - animation or transition */
@@ -681,10 +682,10 @@ header {
     transition-delay: .001s;  */
 
 }
-
+/* 
 .modal-detail-container{
     overflow:auto;
-}
+} */
 
 .modal-close-button {
     display: flex;
@@ -1106,4 +1107,5 @@ header {
 .icon-code-container {
     overflow: scroll;
     max-width: 28rem;
+    text-wrap:auto;
 }

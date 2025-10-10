@@ -183,9 +183,9 @@ import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.mjs";
         post.item.name
       )}</p> 
                 <div class="result-icon icon-element" >${post.item.html}</div>
-                <p class="result-unicode unicode icon-element">${post.item.unicode}</p>
+                <p class="result-unicode unicode icon-element">${post.item.unicode
+        }</p>
                 <div class ="display-none svg-img"> ${post.item.svg}</div>  
-          <!--
                 <aside class="search-tips-container icon-result-tips-container">
                     <div class=" search-tips">
                         <p class="search-tips-heading">QUICK DETAILS</p>
@@ -208,7 +208,6 @@ import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.mjs";
                         <p class="search-tips-subheading more-info">Click for More Info</p>
                     </div>
                 </aside>    
-                -->
             </div>
         </article>
        `;
@@ -228,7 +227,7 @@ import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.mjs";
                 <div class="result-icon" >${post.html}</div>
                 <p class="result-unicode unicode">${post.unicode}</p> 
                 <div class ="display-none svg-img"> ${post.svg}</div>  
-      <!--
+
                 <aside class="search-tips-container icon-result-tips-container">
                     <div class=" search-tips">
                        <p class="search-tips-heading">QUICK DETAILS</p>
@@ -249,11 +248,10 @@ import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.mjs";
                             ${post.classname} 
                         </p>
                         <p class="search-tips-subheading more-info">Click for More Info</p>
-                    </div> 
+                    </div> '
                 </aside>
-                -->
             </div>
-        </article> 
+        </article>
         `;
     }
 
@@ -475,19 +473,15 @@ import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.mjs";
     }
 
     async function showTotalCount() {
-
-      let countContainer = document.createElement("div");
-      countContainer.classList.add('count-container');
       let countDiv = document.createElement("div");
       countDiv.id = "total-count";
       countDiv.classList.add("total-count");
       let count = document.createElement("h3");
       count.innerText = iconsAllArray.length.toLocaleString("en-US") + " Icons";
       countDiv.appendChild(count);
-      countContainer.appendChild(countDiv);
       searchResultContainer.insertAdjacentHTML(
         "afterbegin",
-        countContainer.outerHTML
+        countDiv.outerHTML
       );
     }
 
@@ -500,7 +494,7 @@ import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.mjs";
     }
 
     function openDetailedModalWindow(ev) {
-      if (test) console.log('Event Detail current target:  ', ev.currentTarget)
+      if(test) console.log('Event Detail current target:  ',ev.currentTarget)
 
       let iconclass = ev.currentTarget.dataset.iconclass;
       let groupname = ev.currentTarget.dataset.icongroup;
