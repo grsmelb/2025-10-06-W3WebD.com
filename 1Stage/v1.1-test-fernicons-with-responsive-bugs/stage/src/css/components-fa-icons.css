@@ -682,6 +682,7 @@ header {
     transition-delay: .001s;  */
 
 }
+
 /* 
 .modal-detail-container{
     overflow:auto;
@@ -700,7 +701,6 @@ header {
     height: var(--modal-close-height);
     width: var(--modal-close-width);
     /* color: #333; */
-
 }
 
 .close-cross1,
@@ -989,7 +989,6 @@ header {
     bottom: var(--icon-result-tips-container-bottom);
     left: var(--icon-result-tips-container-left);
     background-color: var(--icon-result-tips-container-bg-color);
-
 }
 
 .tabcontent code {
@@ -1006,7 +1005,6 @@ header {
 
 .icon-result-tips-heading {
     color: var(--icon-result-tips-heading-text-color);
-
 }
 
 .code-cpy .content-copy {
@@ -1031,6 +1029,17 @@ header {
     display: flex;
     gap: 0.3rem;
     margin: 2rem 1rem 1rem 1rem;
+}
+
+.code-div pre {
+    max-height: 6rem;
+    overflow: auto;
+}
+
+.icon-code-container {
+    /* overflow: scroll; */
+    max-width: 28rem;
+    text-wrap: auto;
 }
 
 .copy-tip-copied {
@@ -1100,12 +1109,4 @@ header {
 .loading-para {
     font-size: 1.5rem;
     font-weight: 600;
-
-
-}
-
-.icon-code-container {
-    overflow: scroll;
-    max-width: 28rem;
-    text-wrap:auto;
 }
