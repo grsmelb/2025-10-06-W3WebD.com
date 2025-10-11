@@ -1,0 +1,29 @@
+[
+  {
+    "applyTo": "script-fer-640c0376.js",
+    "headers": [
+      {
+        "name": "access-control-allow-origin",
+        "value": "*"
+      }
+    ]
+  },
+  {
+    "applyTo": "script-fern.js",
+    "headers": [
+      {
+        "name": "access-control-allow-origin",
+        "value": "*"
+      }
+    ]
+  },
+  {
+    "applyTo": "index.html-7dc922a8.html",
+    "headers": [
+      {
+        "name": "access-control-allow-origin",
+        "value": "*"
+      }
+    ]
+  }
+]
