@@ -86,6 +86,11 @@
   /* ionicon secondary text color */
   --nav-color: var(--lighttheme-text-color);
 
+  --link-text-color: #333;
+  --footer-link-text-color: #ddd;
+
+  --link-text-highlight-color:#000 ;
+  --footer-link-text-highlight-color: #fff;
   /* WP dark text color
     I want little lighter with blue tint
     so Wp H1 color works */

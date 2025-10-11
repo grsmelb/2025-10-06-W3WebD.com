@@ -22,6 +22,18 @@ ul{
     list-style: none;
 }
 
+
+footer a:link, 
+footer a:visited{
+    color:var(--footer-link-text-color);
+}
+
+footer a:hover,
+footer a:active{
+    color: var(--footer-link-text-highlight-color);
+    border-bottom: solid 2px var(--footer-link-text-highlight-color)
+}
+
 body {
     font-size: var(--app-font-size);
     font-family: var(--para-font-family);
