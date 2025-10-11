@@ -1119,3 +1119,44 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
 }
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .google-form-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%;
+    Adjust this value based on the form's aspect ratio for better responsiveness
+    height: 0;
+    overflow: hidden;
+} */
+.google-form-container { 
+    /* position: relative; */
+    width: 100%;
+    width: 101vw;
+    /* width: 640px; */
+    /* width: 640px; */
+    /* height:1229px; */
+    height: 1500px;
+    /* padding-top: 100%; */
+    /* margin-bottom:5rem; */
+    /* Adjust this value based on the form's aspect ratio for better responsiveness */
+    /* height: 0; */
+    /* overflow: hidden; */
+ }
+
+.google-form-container iframe {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    /* bottom:0;
+    right:0; */
+    width: 100%;
+    height: 100%;
+    border: none;
+}
