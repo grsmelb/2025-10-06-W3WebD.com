@@ -18,6 +18,10 @@
     color-scheme: dark light;
 }
 
+ul{
+    list-style: none;
+}
+
 body {
     font-size: var(--app-font-size);
     font-family: var(--para-font-family);

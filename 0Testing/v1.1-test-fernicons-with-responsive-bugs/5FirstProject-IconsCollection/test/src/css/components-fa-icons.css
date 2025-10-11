@@ -611,8 +611,15 @@ header {
 .footer p {
     font-size: var(--footer-font-size);
     color: var(--footer-font-color);
+    padding: 1rem;
+    /* margin: 3rem; */
     /* color:rgba(hsla(120, 100%, 25%, 0.767),0.5) */
     /* filter:brightness(250%) */
+}
+
+.footer-contact {
+    padding: 1rem;
+    margin: 3rem;
 }
 
 /* ----------------------------- */
